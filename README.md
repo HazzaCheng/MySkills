@@ -13,6 +13,7 @@ C:\Users\HazzaCheng\.codex\skills
 - skills/: a snapshot of each user-installed skill folder.
 - skills-manifest.json: machine-readable inventory generated from local SKILL.md files.
 - scripts/install-local-skills.ps1: helper script for restoring these skills on a new Windows machine.
+- scripts/sync-from-local-skills.ps1: helper script for refreshing this repo after installing new skills.
 
 System skills under .system and plugin-provided skills are not copied here, because Codex/plugins should provide those again on a new machine.
 
@@ -28,6 +29,14 @@ The script copies every folder in skills/ into:
 
 `	ext
 %USERPROFILE%\.codex\skills
+`
+
+## Update this repo after installing new skills
+
+From this repo root, run:
+
+`powershell
+.\scripts\sync-from-local-skills.ps1 -Commit -Push
 `
 
 ## Skill Inventory

@@ -1,0 +1,185 @@
+﻿{
+    "generatedAt":  "2026-06-07T21:27:02+08:00",
+    "sourceComputer":  "DESKTOP-STKOI0J",
+    "sourceRoot":  "C:\\Users\\HazzaCheng\\.codex\\skills",
+    "note":  "This repository snapshots non-system Codex skills from ~/.codex/skills. System and plugin-provided skills are intentionally not copied.",
+    "skillCount":  22,
+    "skills":  [
+                   {
+                       "folder":  "arxiv",
+                       "name":  "arxiv",
+                       "description":  "Search arXiv papers by keyword, author, category, or ID.",
+                       "snapshotPath":  "skills/arxiv",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  14357
+                   },
+                   {
+                       "folder":  "claude-design",
+                       "name":  "claude-design",
+                       "description":  "Design one-off HTML artifacts (landing, deck, prototype).",
+                       "snapshotPath":  "skills/claude-design",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  19859
+                   },
+                   {
+                       "folder":  "follow-aleabito",
+                       "name":  "follow-aleabito",
+                       "description":  "Track Serenity / @aleabitoreddit on X and turn the feed into (1) a beginner-friendly Chinese iMessage digest with first-principles + Buffett-style judgement, (2) cumulative 60-day ticker mention analytics CSVs for a website, (3) a Xiaohongshu writing brief, and (4) a durable private research map. Trigger on requests like \"follow aleabitoreddit / AleaBito / Serenity\", \"daily Chinese updates from that X account\", \"60-day mention analytics\", \"ticker mention count\", \"写小红书 aleabito\", \"aleabito 研究地图 / research map\", or any request for Chinese commentary derived from @aleabitoreddit posts.",
+                       "snapshotPath":  "skills/follow-aleabito",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  96022
+                   },
+                   {
+                       "folder":  "humanizer",
+                       "name":  "humanizer",
+                       "description":  "Humanize text: strip AI-isms and add real voice.",
+                       "snapshotPath":  "skills/humanizer",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  31091
+                   },
+                   {
+                       "folder":  "ideation",
+                       "name":  "ideation",
+                       "description":  "Generate project ideas via creative constraints.",
+                       "snapshotPath":  "skills/ideation",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  10533
+                   },
+                   {
+                       "folder":  "jupyter-live-kernel",
+                       "name":  "jupyter-live-kernel",
+                       "description":  "Iterative Python via live Jupyter kernel (hamelnb).",
+                       "snapshotPath":  "skills/jupyter-live-kernel",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  5285
+                   },
+                   {
+                       "folder":  "plan",
+                       "name":  "plan",
+                       "description":  "Plan mode: write an actionable markdown plan to .hermes/plans/, no execution. Bite-sized tasks, exact paths, complete code.",
+                       "snapshotPath":  "skills/plan",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  8974
+                   },
+                   {
+                       "folder":  "popular-web-designs",
+                       "name":  "popular-web-designs",
+                       "description":  "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
+                       "snapshotPath":  "skills/popular-web-designs",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  874346
+                   },
+                   {
+                       "folder":  "powerpoint",
+                       "name":  "powerpoint",
+                       "description":  "Create, read, edit .pptx decks, slides, notes, templates.",
+                       "snapshotPath":  "skills/powerpoint",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  1040149
+                   },
+                   {
+                       "folder":  "research-paper-writing",
+                       "name":  "research-paper-writing",
+                       "description":  "Write ML papers for NeurIPS/ICML/ICLR: design→submit.",
+                       "snapshotPath":  "skills/research-paper-writing",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  1408767
+                   },
+                   {
+                       "folder":  "serenity-aleabitoreddit",
+                       "name":  "serenity-aleabitoreddit",
+                       "description":  "\u003e Apply trader Serenity\u0027s (@aleabitoreddit) AI/semiconductor supply-chain analytical lens to US-stock ideas and market judgment. Use this skill whenever evaluating a stock decision (buy / sell / hold / size); forming an outlook on any AI, semiconductor, optical/CPO, memory, power/grid, or neocloud name; mentioning any ticker in Serenity\u0027s universe (NBIS, AXTI, LITE, SIVE, COHR, AAOI, IREN, CRWV, MU, SNDK, NVDA, TSM, MRVL, AVGO, INTC, SOI, IQE, TSEM, CIFR, XLU, VST, CEG, EWY, etc.); asking \"what would Serenity think\", \"is this a real bottleneck\", or wanting a supply-chain / bottleneck read on a thesis. Decision-support only — never auto-trades and never places or cancels orders.",
+                       "snapshotPath":  "skills/serenity-aleabitoreddit",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  377910
+                   },
+                   {
+                       "folder":  "serenity-chokepoint-investing",
+                       "name":  "serenity-chokepoint-investing",
+                       "description":  "Use when analyzing stocks through @aleabitoreddit/Serenity-style supply-chain chokepoint thinking: AI/semi photonics, scarce physical bottlenecks, small-cap monopoly or duopoly nodes, catalyst timing, valuation mismatch, and risk controls. Model-agnostic skill for Codex, Claude Code, Cursor, Gemini CLI, Windsurf, and other agents that support SKILL.md. This skill supports investment research and stock analysis; it does not provide personalized financial advice.",
+                       "snapshotPath":  "skills/serenity-chokepoint-investing",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  62887
+                   },
+                   {
+                       "folder":  "serenity-method",
+                       "name":  "serenity-method",
+                       "description":  "Apply @aleabitoreddit (\"Serenity\")\u0027s distilled stock-analysis method to ANY ticker, sector, or situation — critical-chokepoint / supply-chain-OSINT idea discovery, first-principles value-chain decomposition, a Buffett-style quality gate (moat / profitability / customer-replacement risk, all default unverified), and narrative-vs-fundamentals hygiene. Produces a beginner-friendly Chinese analysis (她的观点 / 小白解释 / 第一性原理 / Buffett 直接判断 / 当前结论) that classifies an idea as 研究地图 vs 可投资结论. Trigger on \"analyze like Serenity / 用 aleabito 的方法分析 / 用 Serenity 框架 / critical chokepoint 分析 / 第一性原理 + Buffett 判断这只股 / supply-chain bottleneck thesis\". Never emits buy/sell calls.",
+                       "snapshotPath":  "skills/serenity-method",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  32198
+                   },
+                   {
+                       "folder":  "serenity-radar",
+                       "name":  "serenity-radar",
+                       "description":  "Use @aleabitoreddit (\"Serenity\")\u0027s full mention archive (built by the follow-aleabito skill) to anticipate where her attention is moving and generate candidate ideas in her style. Two modes — (1) RADAR reads the live mention data for attention momentum (which tickers she is heating up on, new entrants, conviction core, theme rotation) via scripts/radar.js; (2) GENERATOR applies her empirically-mined patterns (theme-rotation logic, selection signature, catalyst playbook) to propose her likely next focus. Every candidate is gated through the serenity-method checklist. This is a CANDIDATE GENERATOR + CHECKLIST, never an oracle or buy/sell signal. Trigger on \"what is Serenity ramping on / her next pick / aleabito radar / predict her next move / generate ideas like her / 她下一个可能看什么\".",
+                       "snapshotPath":  "skills/serenity-radar",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  24566
+                   },
+                   {
+                       "folder":  "serenity-reply",
+                       "name":  "serenity-reply",
+                       "description":  "| Serenity (@aleabitoreddit) 的思维框架与表达方式。基于 6 维度深度调研（1700+ 推文、Substack 长访谈、第三方分析、批评者观点）， 提炼 5 个核心心智模型、8 条决策启发式和完整的表达 DNA。 用途：作为 AI/半导体供应链投资的思维顾问，用 Serenity 的视角分析投资标的、审视决策、提供反馈。 当用户提到「用 Serenity 的视角」「aleabitoreddit 会怎么看」「Serenity 模式」「Serenity perspective」「用 aleabitoreddit 的角度」时使用。 即使用户只是说「帮我用 Serenity 的角度想想」「如果 Serenity 会怎么做」「切换到 Serenity」也应触发。",
+                       "snapshotPath":  "skills/serenity-reply",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  167324
+                   },
+                   {
+                       "folder":  "serenity-skill",
+                       "name":  "serenity-skill",
+                       "description":  "Turn an investment agent into a supply-chain bottleneck hunter. Use this skill for source-backed investment research, live market/theme scans, AI/semi/technology value-chain mapping, A-share/HK/US stock screening, thesis stress tests, and Serenity-inspired research conversations. Trigger on requests like \"用 Serenity 的方式看\", \"深度调研\", \"产业链/供应链/卡点/瓶颈\", \"A股 AI 半导体哪个最值得研究\", \"find unknown bottlenecks\", \"rank candidates\", or \"challenge this thesis\". Outputs plain-language reasoning, ranked research priorities, evidence chains, risks, and next verification steps. Research support only; no trade execution.",
+                       "snapshotPath":  "skills/serenity-skill",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  93713
+                   },
+                   {
+                       "folder":  "serenity-skill-0xagata",
+                       "name":  "serenity-skill-0xagata",
+                       "description":  "Serenity supply-chain investing research framework from 0xagata-prog/serenity-skill.",
+                       "snapshotPath":  "skills/serenity-skill-0xagata",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  1904151
+                   },
+                   {
+                       "folder":  "serenity-stock-choke",
+                       "name":  "serenity-stock-choke",
+                       "description":  "| A股通用\"卡脖子\"选股技能。应用 Serenity（@aleabitoreddit）的供应链瓶颈理论， 对任意 A 股板块/产业链进行结构化分析，寻找\"一旦断货整个产业就停工\"的瓶颈环节， 并筛选该环节中具备技术壁垒和资本信号的小盘股。 触发词：分析XX板块、找XX卡脖子、serenity分析、A股瓶颈产业链 适用板块示例：电力、光模块、医疗器械、半导体设备、军工、新能源车等任意板块 数据源：neodata-financial-search（行情/研报/资金）+ westock-data（筹码/大宗/机构） ⚠️ 注意：本技能不预测大盘走势，不适用于纯题材炒作无实质产业逻辑的小票。",
+                       "snapshotPath":  "skills/serenity-stock-choke",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  20978
+                   },
+                   {
+                       "folder":  "serenity-stock-scorer",
+                       "name":  "serenity-stock-scorer",
+                       "description":  "Score a stock from 0-100 using the local Serenity Signal Ledger tweet corpus. Use when a user asks to rate, rank, analyze, or triage a ticker based on Serenity/X tweet evidence, cashtag mentions, Serenity-style AI supply-chain theses, or the project-local `data/serenity.sqlite` or `api/instance/serenity.sqlite` snapshot.",
+                       "snapshotPath":  "skills/serenity-stock-scorer",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  20266
+                   },
+                   {
+                       "folder":  "serenity-zadanthony",
+                       "name":  "serenity-zadanthony",
+                       "description":  "",
+                       "snapshotPath":  "skills/serenity-zadanthony",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  113328
+                   },
+                   {
+                       "folder":  "serenity-zongmin-yu",
+                       "name":  "serenity-zongmin-yu",
+                       "description":  "| Activates AI infrastructure and semiconductor supply chain analysis. Trigger when: tracing hyperscaler AI capex to find bottleneck companies, analyzing semiconductor/photonics/memory/packaging supply chains, mapping BOM dependencies for AI hardware (GPUs, TPUs, ASICs, optical interconnects, HBM), evaluating supplier concentration in chip materials or critical components, asking \"who controls the critical input for AI buildout,\" or identifying small companies that trillion-dollar AI deployments depend on. Even if the user does not mention \"Serenity,\" proactively trigger when the topic involves AI infrastructure supply chain analysis, semiconductor bottleneck mapping, or upstream supplier tracing for AI hardware.",
+                       "snapshotPath":  "skills/serenity-zongmin-yu",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  10047
+                   },
+                   {
+                       "folder":  "sketch",
+                       "name":  "sketch",
+                       "description":  "Throwaway HTML mockups: 2-3 design variants to compare.",
+                       "snapshotPath":  "skills/sketch",
+                       "hasSkillMd":  true,
+                       "sizeBytes":  9304
+                   }
+               ]
+}

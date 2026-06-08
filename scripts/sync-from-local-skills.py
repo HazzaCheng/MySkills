@@ -30,7 +30,8 @@ def read_text(path: Path) -> str:
 
 
 def write_text(path: Path, value: str) -> None:
-    path.write_text(value, encoding="utf-8", newline="\n")
+    with path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(value)
 
 
 def copy_snapshot(source_root: Path, snapshot_root: Path) -> list[Path]:

@@ -1,4 +1,4 @@
-﻿---
+---
 name: serenity-zongmin-yu
 description: |
   Activates AI infrastructure and semiconductor supply chain analysis. Trigger when: tracing hyperscaler AI capex to find bottleneck companies, analyzing semiconductor/photonics/memory/packaging supply chains, mapping BOM dependencies for AI hardware (GPUs, TPUs, ASICs, optical interconnects, HBM), evaluating supplier concentration in chip materials or critical components, asking "who controls the critical input for AI buildout," or identifying small companies that trillion-dollar AI deployments depend on. Even if the user does not mention "Serenity," proactively trigger when the topic involves AI infrastructure supply chain analysis, semiconductor bottleneck mapping, or upstream supplier tracing for AI hardware.

@@ -1,4 +1,4 @@
-﻿---
+---
 name: serenity-skill-0xagata
 description: Serenity supply-chain investing research framework from 0xagata-prog/serenity-skill.
 ---

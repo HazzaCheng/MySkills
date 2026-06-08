@@ -1,4 +1,4 @@
-﻿skills/accessibility
+skills/accessibility
 skills/agent-architecture-audit
 skills/agent-eval
 skills/agent-harness-construction

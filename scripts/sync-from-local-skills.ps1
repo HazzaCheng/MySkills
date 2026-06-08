@@ -1,4 +1,4 @@
-﻿param(
+param(
   [string]$SkillsRoot = "$env:USERPROFILE\.codex\skills",
   [switch]$Commit,
   [switch]$Push,
@@ -8,6 +8,16 @@
 $ErrorActionPreference = 'Stop'
 $RepoRoot = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $Snapshot = Join-Path $RepoRoot 'skills'
+
+function Set-Utf8NoBomContent {
+  param(
+    [Parameter(Mandatory = $true)][string]$Path,
+    [Parameter(Mandatory = $true)][string]$Value
+  )
+
+  $Utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+  [System.IO.File]::WriteAllText($Path, $Value, $Utf8NoBom)
+}
 
 if (-not (Test-Path -LiteralPath $SkillsRoot)) {
   throw "Cannot find Codex skills root: $SkillsRoot"
@@ -61,60 +71,71 @@ $Manifest = [pscustomobject]@{
   skills = $Items
 }
 
-$Manifest | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath (Join-Path $RepoRoot 'skills-manifest.json') -Encoding UTF8
+$ManifestJson = $Manifest | ConvertTo-Json -Depth 6
+Set-Utf8NoBomContent -Path (Join-Path $RepoRoot 'skills-manifest.json') -Value $ManifestJson
 
 $Rows = ($Items | ForEach-Object { "| $($_.folder) | $($_.name) | $($_.description.Replace('|','/')) |" }) -join "`r`n"
-$Readme = @"
+$ReadmeTemplate = @'
 # MySkills
 
-Personal Codex skills installed on this Windows machine.
+Personal Codex skills shared across Windows and macOS machines.
 
-This repo is a migration record and backup for the non-system skills currently under:
+This repo is a migration record and backup for non-system skills normally stored under:
 
-```text
-$SkillsRoot
-```
+~~~text
+~/.codex/skills
+~~~
+
+On Windows this usually resolves to `%USERPROFILE%\.codex\skills`. On macOS it resolves to `$HOME/.codex/skills`.
 
 ## What is included
 
 - `skills/`: a snapshot of each user-installed skill folder.
 - `skills-manifest.json`: machine-readable inventory generated from local `SKILL.md` files.
-- `scripts/install-local-skills.ps1`: helper script for restoring these skills on a new Windows machine.
-- `scripts/sync-from-local-skills.ps1`: helper script for refreshing this repo after installing new skills.
+- `scripts/install-local-skills.py`: cross-platform restore script for Windows and macOS.
+- `scripts/sync-from-local-skills.py`: cross-platform sync script for Windows and macOS.
+- `scripts/*.ps1`: legacy Windows PowerShell helpers kept for convenience.
 
-System skills under `.system` and plugin-provided skills are not copied here, because Codex/plugins should provide those again on a new machine.
+System skills under `.system` and plugin-provided skills are not copied here, because Codex/plugins should provide those again on each machine.
 
-## Restore on a new Windows machine
+## Restore on a machine
 
-From this repo root, run PowerShell:
+From this repo root, run one of:
 
-```powershell
-.\scripts\install-local-skills.ps1
-```
+~~~bash
+python3 scripts/install-local-skills.py
+~~~
 
-The script copies every folder in `skills/` into:
+~~~powershell
+py -3 scripts\install-local-skills.py
+~~~
 
-```text
-%USERPROFILE%\.codex\skills
-```
+The script copies every folder in `skills/` into `~/.codex/skills`.
 
 ## Update this repo after installing new skills
 
-From this repo root, run:
+From this repo root, run one of:
 
-```powershell
-.\scripts\sync-from-local-skills.ps1 -Commit -Push
-```
+~~~bash
+python3 scripts/sync-from-local-skills.py --commit --push
+~~~
+
+~~~powershell
+py -3 scripts\sync-from-local-skills.py --commit --push
+~~~
+
+All generated text files are written as UTF-8 without BOM so both macOS/Linux tools and Windows terminals can read them cleanly.
 
 ## Skill Inventory
 
-Count: $($Items.Count)
+Count: __SKILL_COUNT__
 
 | Folder | Skill name | Description |
 |---|---|---|
-$Rows
-"@
-Set-Content -LiteralPath (Join-Path $RepoRoot 'README.md') -Value $Readme -Encoding UTF8
+__SKILL_ROWS__
+'@
+$Readme = $ReadmeTemplate.Replace('__SKILL_COUNT__', [string]$Items.Count).Replace('__SKILL_ROWS__', $Rows)
+Set-Utf8NoBomContent -Path (Join-Path $RepoRoot 'README.md') -Value $Readme
 
 Write-Host "Synced $($Items.Count) skills from $SkillsRoot"
 

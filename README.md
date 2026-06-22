@@ -50,7 +50,7 @@ All generated text files are written as UTF-8 without BOM so both macOS/Linux to
 
 ## Skill Inventory
 
-Count: 309
+Count: 310
 
 | Folder | Skill name | Description |
 |---|---|---|
@@ -175,6 +175,7 @@ Count: 309
 | homelab-wireguard-vpn | homelab-wireguard-vpn | WireGuard VPN server setup, peer configuration, key generation, split tunneling vs full tunnel routing, and remote access to a home network from mobile and laptop clients. |
 | hookify-rules | hookify-rules | This skill should be used when the user asks to create a hookify rule, write a hook rule, configure hookify, add a hookify rule, or needs guidance on hookify rule syntax and patterns. |
 | humanizer | humanizer | Humanize text: strip AI-isms and add real voice. |
+| humanizer-zh | humanizer-zh | 去除文本中的 AI 生成痕迹。适用于编辑或审阅文本，使其听起来更自然、更像人类书写。 |
 | ideation | ideation | Generate project ideas via creative constraints. |
 | inherit-legacy-style | inherit-legacy-style | Legacy-project style inheritance skill. Use when the user types /inherit-legacy-style, or when onboarding an AI coding agent onto a hand-written legacy project and you need to prevent "style drift" (the model imposing its pretrained mainstream idioms onto the project). Language- and framework-agnostic — it aligns meta-architecture only, not syntax. Once run, it becomes a behavioral constraint on all subsequent coding tasks. Do NOT use for pure research or one-off questions unrelated to code-style alignment. |
 | intent-driven-development | intent-driven-development | Turn ambiguous or high-impact product and engineering changes into scoped, verifiable acceptance criteria before or alongside implementation. Use when a user asks to clarify a feature, define acceptance criteria, de-risk a security/data/migration/integration change, prepare implementation requirements for another agent, or make a complex request testable. Do not trigger for trivial edits, straightforward fixes, active debugging, code review, or implementation requests whose acceptance conditions are already clear unless the user explicitly invokes this skill. |

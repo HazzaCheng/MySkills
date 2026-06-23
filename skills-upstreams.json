@@ -32,6 +32,51 @@
         ".agents/skills/{skill}",
         "{skill}"
       ]
+    },
+    "community": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "pathCandidates": [
+        "skills/{skill}",
+        ".agents/skills/{skill}",
+        "{skill}"
+      ]
+    },
+    "Flox": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "pathCandidates": [
+        "skills/{skill}",
+        ".agents/skills/{skill}",
+        "{skill}"
+      ]
+    },
+    "Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "pathCandidates": [
+        "skills/{skill}",
+        ".agents/skills/{skill}",
+        "{skill}"
+      ]
+    },
+    "Ronald Skelton - Founder, RapportScore.ai": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "pathCandidates": [
+        "skills/{skill}",
+        ".agents/skills/{skill}",
+        "{skill}"
+      ]
+    },
+    "oh-my-agent-check": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "pathCandidates": [
+        "skills/{skill}",
+        ".agents/skills/{skill}",
+        "{skill}"
+      ]
     }
   },
   "skills": {
@@ -70,6 +115,360 @@
       "ref": "main",
       "path": ".",
       "source": "SKILL.md source link"
+    },
+    "foundation-models-on-device": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/foundation-models-on-device",
+      "source": "git history: 417d091 Install ECC skills from affaan-m/ECC"
+    },
+    "hookify-rules": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/hookify-rules",
+      "source": "git history: 417d091 Install ECC skills from affaan-m/ECC"
+    },
+    "intent-driven-development": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/intent-driven-development",
+      "source": "git history: 417d091 Install ECC skills from affaan-m/ECC"
+    },
+    "liquid-glass-design": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/liquid-glass-design",
+      "source": "git history: 417d091 Install ECC skills from affaan-m/ECC"
+    },
+    "motion-advanced": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/motion-advanced",
+      "source": "git history: 417d091 Install ECC skills from affaan-m/ECC"
+    },
+    "motion-foundations": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/motion-foundations",
+      "source": "git history: 417d091 Install ECC skills from affaan-m/ECC"
+    },
+    "motion-patterns": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/motion-patterns",
+      "source": "git history: 417d091 Install ECC skills from affaan-m/ECC"
+    },
+    "remotion-video-creation": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/remotion-video-creation",
+      "source": "git history: 417d091 Install ECC skills from affaan-m/ECC"
+    },
+    "swift-concurrency-6-2": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/swift-concurrency-6-2",
+      "source": "git history: 417d091 Install ECC skills from affaan-m/ECC"
+    },
+    "swiftui-patterns": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/swiftui-patterns",
+      "source": "git history: 417d091 Install ECC skills from affaan-m/ECC"
+    },
+    "visa-doc-translate": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/visa-doc-translate",
+      "source": "git history: 417d091 Install ECC skills from affaan-m/ECC"
+    },
+    "humanizer": {
+      "repo": "https://github.com/blader/humanizer.git",
+      "ref": "main",
+      "path": ".",
+      "source": "SKILL.md author/homepage; local copy is Hermes port"
+    },
+    "humanizer-zh": {
+      "repo": "https://github.com/op7418/Humanizer-zh.git",
+      "ref": "main",
+      "path": ".",
+      "source": "install command/source repo used when adding skill"
+    },
+    "lark-approval": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-approval",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-apps": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-apps",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-attendance": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-attendance",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-base": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-base",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-calendar": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-calendar",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-contact": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-contact",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-doc": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-doc",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-drive": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-drive",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-event": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-event",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-im": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-im",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-mail": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-mail",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-markdown": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-markdown",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-minutes": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-minutes",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-okr": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-okr",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-openapi-explorer": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-openapi-explorer",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-shared": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-shared",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-sheets": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-sheets",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-skill-maker": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-skill-maker",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-slides": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-slides",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-task": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-task",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-vc": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-vc",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-vc-agent": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-vc-agent",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-whiteboard": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-whiteboard",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-wiki": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-wiki",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-workflow-meeting-summary": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-workflow-meeting-summary",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "lark-workflow-standup-report": {
+      "repo": "https://github.com/larksuite/cli.git",
+      "ref": "main",
+      "path": "skills/lark-workflow-standup-report",
+      "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
+    },
+    "follow-aleabito": {
+      "repo": "https://github.com/lanfuli/aleabito-serenity-skills.git",
+      "ref": "main",
+      "path": "skills/follow-aleabito",
+      "source": "public repo matched by skill path"
+    },
+    "serenity-method": {
+      "repo": "https://github.com/lanfuli/aleabito-serenity-skills.git",
+      "ref": "main",
+      "path": "skills/serenity-method",
+      "source": "public repo matched by skill path"
+    },
+    "serenity-radar": {
+      "repo": "https://github.com/lanfuli/aleabito-serenity-skills.git",
+      "ref": "main",
+      "path": "skills/serenity-radar",
+      "source": "public repo matched by skill path"
+    },
+    "serenity-aleabitoreddit": {
+      "repo": "https://github.com/yan-labs/serenity-aleabitoreddit.git",
+      "ref": "main",
+      "path": "serenity-aleabitoreddit",
+      "source": "public repo matched by skill path"
+    },
+    "serenity-chokepoint-investing": {
+      "repo": "https://github.com/W-Y-P/Serenity-aleabitoreddit-skill.git",
+      "ref": "main",
+      "path": ".",
+      "source": "README upstream/source link"
+    },
+    "serenity-reply": {
+      "repo": "https://github.com/leslieyeo/serenity-reply.git",
+      "ref": "main",
+      "path": ".",
+      "source": "README upstream/source link"
+    },
+    "serenity-skill": {
+      "repo": "https://github.com/muxuuu/serenity-skill.git",
+      "ref": "main",
+      "path": ".",
+      "source": "public repo matched by package contents"
+    },
+    "serenity-stock-choke": {
+      "repo": "https://github.com/fadewalk/serenity-stock-choke.git",
+      "ref": "main",
+      "path": ".",
+      "source": "public repo matched by package contents"
+    },
+    "serenity-stock-scorer": {
+      "repo": "https://github.com/haskaomni/serenity.git",
+      "ref": "main",
+      "path": "skills/serenity-stock-scorer",
+      "source": "public repo matched by skill path"
+    },
+    "serenity-zadanthony": {
+      "repo": "https://github.com/ZadAnthony/serenity-skill.git",
+      "ref": "main",
+      "path": ".",
+      "source": "README upstream/source link"
+    },
+    "serenity-zongmin-yu": {
+      "repo": "https://github.com/zongmin-yu/serenity-skills.git",
+      "ref": "main",
+      "path": "skills/serenity",
+      "source": "public repo matched by skill path"
+    },
+    "arxiv": {
+      "repo": "https://github.com/NousResearch/hermes-agent.git",
+      "ref": "main",
+      "path": "skills/research/arxiv",
+      "source": "Hermes bundled/optional skill path matched from original backup metadata"
+    },
+    "claude-design": {
+      "repo": "https://github.com/NousResearch/hermes-agent.git",
+      "ref": "main",
+      "path": "skills/creative/claude-design",
+      "source": "Hermes bundled/optional skill path matched from original backup metadata"
+    },
+    "ideation": {
+      "repo": "https://github.com/NousResearch/hermes-agent.git",
+      "ref": "main",
+      "path": "optional-skills/creative/creative-ideation",
+      "source": "Hermes bundled/optional skill path matched from original backup metadata"
+    },
+    "jupyter-live-kernel": {
+      "repo": "https://github.com/NousResearch/hermes-agent.git",
+      "ref": "main",
+      "path": "skills/data-science/jupyter-live-kernel",
+      "source": "Hermes bundled/optional skill path matched from original backup metadata"
+    },
+    "plan": {
+      "repo": "https://github.com/NousResearch/hermes-agent.git",
+      "ref": "main",
+      "path": "skills/software-development/plan",
+      "source": "Hermes bundled/optional skill path matched from original backup metadata"
+    },
+    "popular-web-designs": {
+      "repo": "https://github.com/NousResearch/hermes-agent.git",
+      "ref": "main",
+      "path": "skills/creative/popular-web-designs",
+      "source": "Hermes bundled/optional skill path matched from original backup metadata"
+    },
+    "powerpoint": {
+      "repo": "https://github.com/NousResearch/hermes-agent.git",
+      "ref": "main",
+      "path": "skills/productivity/powerpoint",
+      "source": "Hermes bundled/optional skill path matched from original backup metadata"
+    },
+    "research-paper-writing": {
+      "repo": "https://github.com/NousResearch/hermes-agent.git",
+      "ref": "main",
+      "path": "skills/research/research-paper-writing",
+      "source": "Hermes bundled/optional skill path matched from original backup metadata"
+    },
+    "sketch": {
+      "repo": "https://github.com/NousResearch/hermes-agent.git",
+      "ref": "main",
+      "path": "skills/creative/sketch",
+      "source": "Hermes bundled/optional skill path matched from original backup metadata"
     }
   }
 }

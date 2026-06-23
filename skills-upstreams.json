@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "notes": [
+    "This file tracks upstream repositories for skills mirrored in this repo.",
+    "Entries here are intentionally conservative: only add paths that can be compared mechanically.",
+    "If a skill has no explicit entry, check-upstream-skills.py may fall back to originDefaults or frontmatter repo fields."
+  ],
+  "originDefaults": {
+    "ECC": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "pathCandidates": [
+        "skills/{skill}",
+        ".agents/skills/{skill}",
+        "{skill}"
+      ]
+    },
+    "ECC direct-port adaptation": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "pathCandidates": [
+        "skills/{skill}",
+        ".agents/skills/{skill}",
+        "{skill}"
+      ]
+    },
+    "ECC-community": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "pathCandidates": [
+        "skills/{skill}",
+        ".agents/skills/{skill}",
+        "{skill}"
+      ]
+    }
+  },
+  "skills": {
+    "ck": {
+      "repo": "https://github.com/sreedhargs89/context-keeper.git",
+      "ref": "main",
+      "path": ".",
+      "source": "frontmatter repo"
+    },
+    "react-performance": {
+      "repo": "https://github.com/vercel-labs/agent-skills.git",
+      "ref": "main",
+      "path": "skills/react-best-practices",
+      "source": "SKILL.md attribution"
+    },
+    "recsys-pipeline-architect": {
+      "repo": "https://github.com/mturac/recsys-pipeline-architect.git",
+      "ref": "main",
+      "path": ".",
+      "source": "SKILL.md upstream"
+    },
+    "repo-scan": {
+      "repo": "https://github.com/haibindev/repo-scan.git",
+      "ref": "master",
+      "path": ".",
+      "source": "SKILL.md upstream link; install text only has short pin 2742664"
+    },
+    "serenity-skill-0xagata": {
+      "repo": "https://github.com/0xagata-prog/serenity-skill.git",
+      "ref": "main",
+      "path": ".",
+      "source": "manifest description"
+    },
+    "token-budget-advisor": {
+      "repo": "https://github.com/Xabilimon1/Token-Budget-Advisor-Claude-Code-.git",
+      "ref": "main",
+      "path": ".",
+      "source": "SKILL.md source link"
+    }
+  }
+}

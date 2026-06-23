@@ -100,8 +100,10 @@ On Windows this usually resolves to `%USERPROFILE%\\.codex\\skills`. On macOS it
 
 - `skills/`: a snapshot of each user-installed skill folder.
 - `skills-manifest.json`: machine-readable inventory generated from local `SKILL.md` files.
+- `skills-upstreams.json`: upstream repository map for skills with known sources.
 - `scripts/install-local-skills.py`: cross-platform restore script for Windows and macOS.
 - `scripts/sync-from-local-skills.py`: cross-platform sync script for Windows and macOS.
+- `scripts/check-upstream-skills.py`: upstream drift checker for mirrored skills.
 - `scripts/*.ps1`: legacy Windows PowerShell helpers kept for convenience.
 
 System skills under `.system` and plugin-provided skills are not copied here, because Codex/plugins should provide those again on each machine.
@@ -133,6 +135,40 @@ py -3 scripts\\sync-from-local-skills.py --commit --push
 ```
 
 All generated text files are written as UTF-8 without BOM so both macOS/Linux tools and Windows terminals can read them cleanly.
+
+## Check upstream skill updates
+
+This repository is a local snapshot, so upstream project updates are tracked separately in `skills-upstreams.json`.
+
+Show mapping coverage without network access:
+
+```bash
+python3 scripts/check-upstream-skills.py --coverage
+```
+
+```powershell
+py -3 scripts\\check-upstream-skills.py --coverage
+```
+
+Check one skill against its upstream repository:
+
+```bash
+python3 scripts/check-upstream-skills.py --skill codebase-onboarding
+```
+
+Write a full JSON report:
+
+```bash
+python3 scripts/check-upstream-skills.py --write-report
+```
+
+Statuses:
+
+- `up-to-date`: repository snapshot matches the configured upstream path.
+- `upstream-changed`: upstream content differs from `skills/<name>`.
+- `upstream-path-missing`: the upstream repo was fetched, but no configured path matched.
+- `unknown-upstream`: no upstream repo is known yet; add it to `skills-upstreams.json`.
+- `upstream-unavailable`: git could not fetch the configured repo/ref.
 
 ## Skill Inventory
 

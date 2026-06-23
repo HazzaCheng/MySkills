@@ -34,6 +34,37 @@ def write_text(path: Path, value: str) -> None:
         handle.write(value)
 
 
+def normalize_description(value: str) -> str:
+    lines = value.strip().splitlines()
+    if lines and lines[0].strip() in {"|", "|-", "|+", ">", ">-", ">+"}:
+        value = "\n".join(lines[1:])
+    return re.sub(r"\s+", " ", value.strip()).strip('"')
+
+
+def first_body_paragraph(raw: str) -> str:
+    if raw.startswith("---"):
+        end = raw.find("\n---", 3)
+        if end != -1:
+            raw = raw[end + 4 :]
+
+    paragraph: list[str] = []
+    in_fence = False
+    for line in raw.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence or not stripped:
+            if paragraph:
+                break
+            continue
+        if stripped.startswith("#"):
+            continue
+        paragraph.append(stripped)
+
+    return re.sub(r"\s+", " ", " ".join(paragraph)).strip()
+
+
 def copy_snapshot(source_root: Path, snapshot_root: Path) -> list[Path]:
     if source_root.resolve() == snapshot_root.resolve():
         raise SystemExit("Source skills root cannot be the repository skills snapshot.")
@@ -65,7 +96,9 @@ def parse_skill(skill_dir: Path, snapshot_dir: Path) -> dict[str, object]:
 
         desc_match = SKILL_BLOCK_RE.search(raw)
         if desc_match:
-            description = re.sub(r"\s+", " ", desc_match.group(1).strip()).strip('"')
+            description = normalize_description(desc_match.group(1))
+        if not description:
+            description = first_body_paragraph(raw)
 
     size = sum(path.stat().st_size for path in skill_dir.rglob("*") if path.is_file())
     return {
@@ -81,7 +114,7 @@ def parse_skill(skill_dir: Path, snapshot_dir: Path) -> dict[str, object]:
 def build_readme(manifest: dict[str, object]) -> str:
     rows = []
     for item in manifest["skills"]:
-        description = str(item["description"]).replace("|", "/")
+        description = str(item["description"]).replace("|", r"\|")
         rows.append(f"| {item['folder']} | {item['name']} | {description} |")
 
     return f"""# MySkills

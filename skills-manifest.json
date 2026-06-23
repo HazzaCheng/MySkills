@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-08T19:56:46+08:00",
+  "generatedAt": "2026-06-23T14:21:35+08:00",
   "sourceComputer": "MacBook-Pro.local",
   "sourceRoot": "/Users/bytedance/.codex/skills",
   "note": "This repository snapshots non-system Codex skills from ~/.codex/skills. System and plugin-provided skills are intentionally not copied.",
-  "skillCount": 309,
+  "skillCount": 310,
   "skills": [
     {
       "folder": "accessibility",
@@ -208,7 +208,7 @@
     {
       "folder": "blueprint",
       "name": "blueprint",
-      "description": ">- Turn a one-line objective into a step-by-step construction plan for multi-session, multi-agent engineering projects. Each step has a self-contained context brief so a fresh agent can execute it cold. Includes adversarial review gate, dependency graph, parallel step detection, anti-pattern catalog, and plan mutation protocol. TRIGGER when: user requests a plan, blueprint, or roadmap for a complex multi-PR task, or describes work that needs multiple sessions. DO NOT TRIGGER when: task is completable in a single PR or fewer than 3 tool calls, or user says \"just do it\".",
+      "description": "Turn a one-line objective into a step-by-step construction plan for multi-session, multi-agent engineering projects. Each step has a self-contained context brief so a fresh agent can execute it cold. Includes adversarial review gate, dependency graph, parallel step detection, anti-pattern catalog, and plan mutation protocol. TRIGGER when: user requests a plan, blueprint, or roadmap for a complex multi-PR task, or describes work that needs multiple sessions. DO NOT TRIGGER when: task is completable in a single PR or fewer than 3 tool calls, or user says \"just do it\".",
       "snapshotPath": "skills/blueprint",
       "hasSkillMd": true,
       "sizeBytes": 5344
@@ -248,7 +248,7 @@
     {
       "folder": "carrier-relationship-management",
       "name": "carrier-relationship-management",
-      "description": "> Codified expertise for managing carrier portfolios, negotiating freight rates, tracking carrier performance, allocating freight, and maintaining strategic carrier relationships. Informed by transportation managers with 15+ years experience. Includes scorecarding frameworks, RFP processes, market intelligence, and compliance vetting. Use when managing carriers, negotiating rates, evaluating carrier performance, or building freight strategies.",
+      "description": "Codified expertise for managing carrier portfolios, negotiating freight rates, tracking carrier performance, allocating freight, and maintaining strategic carrier relationships. Informed by transportation managers with 15+ years experience. Includes scorecarding frameworks, RFP processes, market intelligence, and compliance vetting. Use when managing carriers, negotiating rates, evaluating carrier performance, or building freight strategies.",
       "snapshotPath": "skills/carrier-relationship-management",
       "hasSkillMd": true,
       "sizeBytes": 23761
@@ -264,10 +264,10 @@
     {
       "folder": "ck",
       "name": "ck",
-      "description": "Persistent per-project memory for Claude Code. Auto-loads project context on session start, tracks sessions with git activity, and writes to native memory. Commands run deterministic Node.js scripts — behavior is consistent across model versions.",
+      "description": "You are the **Context Keeper** assistant. When the user invokes any `/ck:*` command, run the corresponding Node.js script and present its stdout to the user verbatim. Scripts live at: `~/.claude/skills/ck/commands/` (expand `~` with `$HOME`).",
       "snapshotPath": "skills/ck",
       "hasSkillMd": true,
-      "sizeBytes": 54050
+      "sizeBytes": 78030
     },
     {
       "folder": "claude-design",
@@ -472,7 +472,7 @@
     {
       "folder": "customs-trade-compliance",
       "name": "customs-trade-compliance",
-      "description": "> Codified expertise for customs documentation, tariff classification, duty optimization, restricted party screening, and regulatory compliance across multiple jurisdictions. Informed by trade compliance specialists with 15+ years experience. Includes HS classification logic, Incoterms application, FTA utilization, and penalty mitigation. Use when handling customs clearance, tariff classification, trade compliance, import/export documentation, or duty optimization.",
+      "description": "Codified expertise for customs documentation, tariff classification, duty optimization, restricted party screening, and regulatory compliance across multiple jurisdictions. Informed by trade compliance specialists with 15+ years experience. Includes HS classification logic, Incoterms application, FTA utilization, and penalty mitigation. Use when handling customs clearance, tariff classification, trade compliance, import/export documentation, or duty optimization.",
       "snapshotPath": "skills/customs-trade-compliance",
       "hasSkillMd": true,
       "sizeBytes": 29045
@@ -664,7 +664,7 @@
     {
       "folder": "energy-procurement",
       "name": "energy-procurement",
-      "description": "> Codified expertise for electricity and gas procurement, tariff optimization, demand charge management, renewable PPA evaluation, and multi-facility energy cost management. Informed by energy procurement managers with 15+ years experience at large commercial and industrial consumers. Includes market structure analysis, hedging strategies, load profiling, and sustainability reporting frameworks. Use when procuring energy, optimizing tariffs, managing demand charges, evaluating PPAs, or developing energy strategies.",
+      "description": "Codified expertise for electricity and gas procurement, tariff optimization, demand charge management, renewable PPA evaluation, and multi-facility energy cost management. Informed by energy procurement managers with 15+ years experience at large commercial and industrial consumers. Includes market structure analysis, hedging strategies, load profiling, and sustainability reporting frameworks. Use when procuring energy, optimizing tariffs, managing demand charges, evaluating PPAs, or developing energy strategies.",
       "snapshotPath": "skills/energy-procurement",
       "hasSkillMd": true,
       "sizeBytes": 30077
@@ -768,7 +768,7 @@
     {
       "folder": "frontend-a11y",
       "name": "frontend-a11y",
-      "description": "> Accessibility patterns for React and Next.js — semantic HTML, ARIA attributes, form labeling, keyboard navigation, focus management, and screen reader support. Use when building any interactive UI component or form.",
+      "description": "Accessibility patterns for React and Next.js — semantic HTML, ARIA attributes, form labeling, keyboard navigation, focus management, and screen reader support. Use when building any interactive UI component or form.",
       "snapshotPath": "skills/frontend-a11y",
       "hasSkillMd": true,
       "sizeBytes": 12712
@@ -968,18 +968,26 @@
     {
       "folder": "humanizer",
       "name": "humanizer",
-      "description": "Humanize text: strip AI-isms and add real voice.",
+      "description": "Remove signs of AI-generated writing from text. Use when editing or reviewing text to make it sound more natural and human-written. Based on Wikipedia's comprehensive \"Signs of AI writing\" guide. Detects and fixes patterns including: inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, passive voice, negative parallelisms, and filler phrases.",
       "snapshotPath": "skills/humanizer",
       "hasSkillMd": true,
-      "sizeBytes": 31091
+      "sizeBytes": 48002
+    },
+    {
+      "folder": "humanizer-zh",
+      "name": "humanizer-zh",
+      "description": "去除文本中的 AI 生成痕迹。适用于编辑或审阅文本，使其听起来更自然、更像人类书写。 基于维基百科的\"AI 写作特征\"综合指南。检测并修复以下模式：夸大的象征意义、 宣传性语言、以 -ing 结尾的肤浅分析、模糊的归因、破折号过度使用、三段式法则、 AI 词汇、否定式排比、过多的连接性短语。",
+      "snapshotPath": "skills/humanizer-zh",
+      "hasSkillMd": true,
+      "sizeBytes": 27801
     },
     {
       "folder": "ideation",
-      "name": "ideation",
-      "description": "Generate project ideas via creative constraints.",
+      "name": "creative-ideation",
+      "description": "Generate ideas via named methods from creative practice.",
       "snapshotPath": "skills/ideation",
       "hasSkillMd": true,
-      "sizeBytes": 10533
+      "sizeBytes": 135412
     },
     {
       "folder": "inherit-legacy-style",
@@ -1000,7 +1008,7 @@
     {
       "folder": "inventory-demand-planning",
       "name": "inventory-demand-planning",
-      "description": "> Codified expertise for demand forecasting, safety stock optimization, replenishment planning, and promotional lift estimation at multi-location retailers. Informed by demand planners with 15+ years experience managing hundreds of SKUs. Includes forecasting method selection, ABC/XYZ analysis, seasonal transition management, and vendor negotiation frameworks. Use when forecasting demand, setting safety stock, planning replenishment, managing promotions, or optimizing inventory levels.",
+      "description": "Codified expertise for demand forecasting, safety stock optimization, replenishment planning, and promotional lift estimation at multi-location retailers. Informed by demand planners with 15+ years experience managing hundreds of SKUs. Includes forecasting method selection, ABC/XYZ analysis, seasonal transition management, and vendor negotiation frameworks. Use when forecasting demand, setting safety stock, planning replenishment, managing promotions, or optimizing inventory levels.",
       "snapshotPath": "skills/inventory-demand-planning",
       "hasSkillMd": true,
       "sizeBytes": 24508
@@ -1208,10 +1216,10 @@
     {
       "folder": "lark-apps",
       "name": "lark-apps",
-      "description": "把本地 HTML 文件或目录部署到飞书妙搭（Miaoda），生成一个公网可访问的应用及其链接（URL）。当用户要创建 HTML 或要把 HTML、静态网站或 Web demo 发布成公网可访问的链接 / 可分享链接、设置应用共享范围，或提到妙搭 / Miaoda 时使用。凡产出可独立访问的 HTML 产物都属本 skill 的潜在归宿，是否真要部署由 skill 内部协议判断。不用于：上传普通文件到云空间/云盘/云存储（用 lark-drive）、编辑飞书云文档内容（用 lark-doc）、创建飞书原生幻灯片 / 演示文稿（用 lark-slides）。",
+      "description": "妙搭（Spark/Miaoda）应用开发与托管：应用创建、HTML静态站点发布、本地全栈开发、云端生成迭代。当用户要开发/新建一个系统·工具·平台·应用，或要本地开发 / 云端开发 / 修改 / 部署 / 发布 / 上线 / 拿可分享链接，或用 HTML 做页面·网站给人看，或提到妙搭/Spark/Miaoda、应用数据库、可见范围时使用。不负责普通云盘文件上传（lark-drive）、飞书文档编辑（lark-doc）、原生幻灯片创建（lark-slides）。",
       "snapshotPath": "skills/lark-apps",
       "hasSkillMd": true,
-      "sizeBytes": 30840
+      "sizeBytes": 53461
     },
     {
       "folder": "lark-attendance",
@@ -1256,10 +1264,10 @@
     {
       "folder": "lark-drive",
       "name": "lark-drive",
-      "description": "飞书云空间（云盘/云存储）：管理云空间（云盘/云存储）中的文件和文件夹。上传和下载文件、创建文件夹、复制/移动/删除文件、查看文件元数据、管理文档评论、管理文档权限、订阅用户评论变更事件、修改文件标题（docx、sheet、bitable、file、folder、wiki）；也负责把本地 Word/Markdown/Excel/CSV/PPTX 以及 Base 快照（.base）导入为飞书在线云文档（docx、sheet、bitable、slides）。当用户需要上传或下载文件、整理云空间（云盘/云存储）目录、查看文件详情、管理评论、管理文档权限、修改文件标题、订阅用户评论变更事件，或要把本地文件导入成新版文档、电子表格、多维表格/Base/幻灯片 时使用。\\\"云空间\\\"、\\\"云盘\\\"和\\\"云存储\\\"是同一概念，用户说\\\"云盘\\\"、\\\"云存储\\\"、\\\"网盘\\\"、\\\"我的空间\\\"时均路由到本 skill。当用户给出 doubao.com 的云空间资源 URL/token，或明确提到豆包里的 file/folder/docx/sheet/bitable/wiki 资源时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是资源类型、URL 路径模式和 token，而不是域名。",
+      "description": "飞书云空间（云盘/云存储）：管理 Drive 文件和文件夹，包含上传/下载、创建文件夹、复制/移动/删除、查看元数据、评论/权限/订阅、标题、版本和本地文件导入。用户需要整理云盘目录、处理云空间资源 URL/token，或导入 Word/Markdown/Excel/CSV/PPTX/.base 为 docx/sheet/bitable/slides 时使用；doubao.com 云空间 URL/token 也按资源路径和 token 路由，不回退 WebFetch。不负责：文档内容编辑（走 lark-doc）、表格/Base 表内数据操作（走 lark-sheets/lark-base）、知识空间节点/成员管理（走 lark-wiki）、原生 Markdown 文件读写/patch/diff（走 lark-markdown）。",
       "snapshotPath": "skills/lark-drive",
       "hasSkillMd": true,
-      "sizeBytes": 270126
+      "sizeBytes": 338615
     },
     {
       "folder": "lark-event",
@@ -1280,10 +1288,10 @@
     {
       "folder": "lark-mail",
       "name": "lark-mail",
-      "description": "飞书邮箱 — draft, compose, send, reply, forward, read, and search emails; manage drafts, folders, labels, contacts, attachments, and mail rules. Use when user mentions 起草邮件, 写一封邮件, 拟邮件, 草稿, 发通知邮件, 发送邮件, 发邮件, 回复邮件, 转发邮件, 查看邮件, 看邮件, 读邮件, 搜索邮件, 查邮件, 收件箱, 邮件会话, 编辑草稿, 管理草稿, 下载附件, 邮件文件夹, 邮件标签, 邮件联系人, 监听新邮件, 收信规则, 邮件规则, draft, compose, send email, reply, forward, inbox, mail thread, mail rules.",
+      "description": "飞书邮箱：Use when user mentions 起草邮件、写邮件、草稿、发送/回复/转发邮件、查阅邮件、看邮件、搜索邮件、邮件文件夹、邮件标签、邮件联系人、监听新邮件、邮件收信规则等；use for mail/email intent only. Do not use for docs/sheets/calendar/auth setup/pure contact lookup/IM chat tasks.",
       "snapshotPath": "skills/lark-mail",
       "hasSkillMd": true,
-      "sizeBytes": 282295
+      "sizeBytes": 284332
     },
     {
       "folder": "lark-markdown",
@@ -1296,18 +1304,18 @@
     {
       "folder": "lark-minutes",
       "name": "lark-minutes",
-      "description": "飞书妙记：搜索妙记列表、查看妙记基础信息、下载妙记音视频文件、上传音视频生成妙记、更新妙记标题、替换说话人。当需要获取、操作或者生成妙记时使用。也支持将本地音视频文件转成纪要和逐字稿（优先使用本 skill，不要用 ffmpeg/whisper 本地转写）。不负责：获取会议关联妙记、纪要/逐字稿内容获取走 lark-vc",
+      "description": "飞书妙记：搜索妙记列表、查看妙记基础信息、下载妙记音视频文件、上传音视频生成妙记、更新妙记标题、替换说话人。当需要获取、操作或者生成妙记时使用。也支持将本地音视频文件转成纪要和逐字稿（优先使用本 skill，不要用 ffmpeg/whisper 本地转写）。不负责：获取会议关联妙记，或仅按自然语言标题定位纪要",
       "snapshotPath": "skills/lark-minutes",
       "hasSkillMd": true,
-      "sizeBytes": 36144
+      "sizeBytes": 52118
     },
     {
       "folder": "lark-okr",
       "name": "lark-okr",
-      "description": "飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标（Objective）、关键结果（Key Result）、对齐关系、量化指标和进展记录。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。",
+      "description": "飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标、关键结果、对齐关系、量化指标和进展记录。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。不负责：待办任务管理（lark-task）、日程/会议安排（lark-calendar）、绩效评估",
       "snapshotPath": "skills/lark-okr",
       "hasSkillMd": true,
-      "sizeBytes": 62501
+      "sizeBytes": 74754
     },
     {
       "folder": "lark-openapi-explorer",
@@ -1376,7 +1384,7 @@
     {
       "folder": "lark-whiteboard",
       "name": "lark-whiteboard",
-      "description": "> 飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及\"画板\"。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。",
+      "description": "飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及\"画板\"。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。",
       "snapshotPath": "skills/lark-whiteboard",
       "hasSkillMd": true,
       "sizeBytes": 217580
@@ -1440,7 +1448,7 @@
     {
       "folder": "logistics-exception-management",
       "name": "logistics-exception-management",
-      "description": "> Codified expertise for handling freight exceptions, shipment delays, damages, losses, and carrier disputes. Informed by logistics professionals with 15+ years operational experience. Includes escalation protocols, carrier-specific behaviors, claims procedures, and judgment frameworks. Use when handling shipping exceptions, freight claims, delivery issues, or carrier disputes.",
+      "description": "Codified expertise for handling freight exceptions, shipment delays, damages, losses, and carrier disputes. Informed by logistics professionals with 15+ years operational experience. Includes escalation protocols, carrier-specific behaviors, claims procedures, and judgment frameworks. Use when handling shipping exceptions, freight claims, delivery issues, or carrier disputes.",
       "snapshotPath": "skills/logistics-exception-management",
       "hasSkillMd": true,
       "sizeBytes": 16877
@@ -1816,7 +1824,7 @@
     {
       "folder": "production-scheduling",
       "name": "production-scheduling",
-      "description": "> Codified expertise for production scheduling, job sequencing, line balancing, changeover optimization, and bottleneck resolution in discrete and batch manufacturing. Informed by production schedulers with 15+ years experience. Includes TOC/drum-buffer-rope, SMED, OEE analysis, disruption response frameworks, and ERP/MES interaction patterns. Use when scheduling production, resolving bottlenecks, optimizing changeovers, responding to disruptions, or balancing manufacturing lines.",
+      "description": "Codified expertise for production scheduling, job sequencing, line balancing, changeover optimization, and bottleneck resolution in discrete and batch manufacturing. Informed by production schedulers with 15+ years experience. Includes TOC/drum-buffer-rope, SMED, OEE analysis, disruption response frameworks, and ERP/MES interaction patterns. Use when scheduling production, resolving bottlenecks, optimizing changeovers, responding to disruptions, or balancing manufacturing lines.",
       "snapshotPath": "skills/production-scheduling",
       "hasSkillMd": true,
       "sizeBytes": 28573
@@ -1832,7 +1840,7 @@
     {
       "folder": "prompt-optimizer",
       "name": "prompt-optimizer",
-      "description": ">- Analyze raw prompts, identify intent and gaps, match ECC components (skills/commands/agents/hooks), and output a ready-to-paste optimized prompt. Advisory role only — never executes the task itself. TRIGGER when: user says \"optimize prompt\", \"improve my prompt\", \"how to write a prompt for\", \"help me prompt\", \"rewrite this prompt\", or explicitly asks to enhance prompt quality. Also triggers on Chinese equivalents: \"优化prompt\", \"改进prompt\", \"怎么写prompt\", \"帮我优化这个指令\". DO NOT TRIGGER when: user wants the task executed directly, or says \"just do it\" / \"直接做\". DO NOT TRIGGER when user says \"优化代码\", \"优化性能\", \"optimize performance\", \"optimize this code\" — those are refactoring/performance tasks, not prompt optimization.",
+      "description": "Analyze raw prompts, identify intent and gaps, match ECC components (skills/commands/agents/hooks), and output a ready-to-paste optimized prompt. Advisory role only — never executes the task itself. TRIGGER when: user says \"optimize prompt\", \"improve my prompt\", \"how to write a prompt for\", \"help me prompt\", \"rewrite this prompt\", or explicitly asks to enhance prompt quality. Also triggers on Chinese equivalents: \"优化prompt\", \"改进prompt\", \"怎么写prompt\", \"帮我优化这个指令\". DO NOT TRIGGER when: user wants the task executed directly, or says \"just do it\" / \"直接做\". DO NOT TRIGGER when user says \"优化代码\", \"优化性能\", \"optimize performance\", \"optimize this code\" — those are refactoring/performance tasks, not prompt optimization.",
       "snapshotPath": "skills/prompt-optimizer",
       "hasSkillMd": true,
       "sizeBytes": 16445
@@ -1864,7 +1872,7 @@
     {
       "folder": "quality-nonconformance",
       "name": "quality-nonconformance",
-      "description": "> Codified expertise for quality control, non-conformance investigation, root cause analysis, corrective action, and supplier quality management in regulated manufacturing. Informed by quality engineers with 15+ years experience across FDA, IATF 16949, and AS9100 environments. Includes NCR lifecycle management, CAPA systems, SPC interpretation, and audit methodology. Use when investigating non-conformances, performing root cause analysis, managing CAPAs, interpreting SPC data, or handling supplier quality issues.",
+      "description": "Codified expertise for quality control, non-conformance investigation, root cause analysis, corrective action, and supplier quality management in regulated manufacturing. Informed by quality engineers with 15+ years experience across FDA, IATF 16949, and AS9100 environments. Includes NCR lifecycle management, CAPA systems, SPC interpretation, and audit methodology. Use when investigating non-conformances, performing root cause analysis, managing CAPAs, interpreting SPC data, or handling supplier quality issues.",
       "snapshotPath": "skills/quality-nonconformance",
       "hasSkillMd": true,
       "sizeBytes": 30387
@@ -1919,11 +1927,11 @@
     },
     {
       "folder": "react-performance",
-      "name": "react-performance",
-      "description": "React and Next.js performance optimization patterns adapted from Vercel Engineering's React Best Practices (https://github.com/vercel-labs/agent-skills). Organizes 70+ rules across 8 priority categories — waterfalls, bundle size, server-side, client fetching, re-render, rendering, JS micro-perf, advanced. Use when writing, reviewing, or refactoring React/Next.js code for performance.",
+      "name": "vercel-react-best-practices",
+      "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
       "snapshotPath": "skills/react-performance",
       "hasSkillMd": true,
-      "sizeBytes": 18172
+      "sizeBytes": 230383
     },
     {
       "folder": "react-testing",
@@ -1936,10 +1944,10 @@
     {
       "folder": "recsys-pipeline-architect",
       "name": "recsys-pipeline-architect",
-      "description": "Design composable recommendation, ranking, and feed pipelines using the six-stage Source→Hydrator→Filter→Scorer→Selector→SideEffect framework popularized by xAI's open-sourced For You algorithm. Use this skill whenever the user is building any system that picks \"the top K items for a (user, context)\" — social feeds, content CMSs, RAG rerankers, task prioritizers, notification triage, search reranking, ad ranking.",
+      "description": "Designs composable recommendation, ranking, and feed pipelines using the six-stage Source→Hydrator→Filter→Scorer→Selector→SideEffect framework popularized by X's open-sourced For You algorithm. Use this skill when the user wants to build any system that picks \"the top K items for a user/context\" — content feeds, search ranking, task prioritization, notification ordering, RAG retrieval ranking, alert triage, ad selection. Produces a stage-by-stage spec, an interface definition in the user's target language, and a runnable scaffold. Triggers: \"recommendation system\", \"feed algorithm\", \"ranking pipeline\", \"for you feed\", \"how should I rank X\", \"candidate pipeline\", \"content recommender\", \"pipeline architecture for recsys\".",
       "snapshotPath": "skills/recsys-pipeline-architect",
       "hasSkillMd": true,
-      "sizeBytes": 7776
+      "sizeBytes": 944689
     },
     {
       "folder": "recursive-decision-ledger",
@@ -1976,10 +1984,10 @@
     {
       "folder": "repo-scan",
       "name": "repo-scan",
-      "description": "Cross-stack source code asset audit — classifies every file, detects embedded third-party libraries, and delivers actionable four-level verdicts per module with interactive HTML reports.",
+      "description": "对指定项目源码目录执行全面资产审计，生成《全网模块与源码资产审计详细清单》。当用户要求\"审计源码\"、\"盘点代码资产\"、\"生成清单\"时自动触发。",
       "snapshotPath": "skills/repo-scan",
       "hasSkillMd": true,
-      "sizeBytes": 3547
+      "sizeBytes": 1627083
     },
     {
       "folder": "research-ops",
@@ -2000,7 +2008,7 @@
     {
       "folder": "returns-reverse-logistics",
       "name": "returns-reverse-logistics",
-      "description": "> Codified expertise for returns authorization, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims management. Informed by returns operations managers with 15+ years experience. Includes grading frameworks, disposition economics, fraud pattern recognition, and vendor recovery processes. Use when handling product returns, reverse logistics, refund decisions, return fraud detection, or warranty claims.",
+      "description": "Codified expertise for returns authorization, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims management. Informed by returns operations managers with 15+ years experience. Includes grading frameworks, disposition economics, fraud pattern recognition, and vendor recovery processes. Use when handling product returns, reverse logistics, refund decisions, return fraud detection, or warranty claims.",
       "snapshotPath": "skills/returns-reverse-logistics",
       "hasSkillMd": true,
       "sizeBytes": 24699
@@ -2128,7 +2136,7 @@
     {
       "folder": "serenity-aleabitoreddit",
       "name": "serenity-aleabitoreddit",
-      "description": "> Apply trader Serenity's (@aleabitoreddit) AI/semiconductor supply-chain analytical lens to US-stock ideas and market judgment. Use this skill whenever evaluating a stock decision (buy / sell / hold / size); forming an outlook on any AI, semiconductor, optical/CPO, memory, power/grid, or neocloud name; mentioning any ticker in Serenity's universe (NBIS, AXTI, LITE, SIVE, COHR, AAOI, IREN, CRWV, MU, SNDK, NVDA, TSM, MRVL, AVGO, INTC, SOI, IQE, TSEM, CIFR, XLU, VST, CEG, EWY, etc.); asking \"what would Serenity think\", \"is this a real bottleneck\", or wanting a supply-chain / bottleneck read on a thesis. Decision-support only — never auto-trades and never places or cancels orders.",
+      "description": "Apply trader Serenity's (@aleabitoreddit) AI/semiconductor supply-chain analytical lens to US-stock ideas and market judgment. Use this skill whenever evaluating a stock decision (buy / sell / hold / size); forming an outlook on any AI, semiconductor, optical/CPO, memory, power/grid, or neocloud name; mentioning any ticker in Serenity's universe (NBIS, AXTI, LITE, SIVE, COHR, AAOI, IREN, CRWV, MU, SNDK, NVDA, TSM, MRVL, AVGO, INTC, SOI, IQE, TSEM, CIFR, XLU, VST, CEG, EWY, etc.); asking \"what would Serenity think\", \"is this a real bottleneck\", or wanting a supply-chain / bottleneck read on a thesis. Decision-support only — never auto-trades and never places or cancels orders.",
       "snapshotPath": "skills/serenity-aleabitoreddit",
       "hasSkillMd": true,
       "sizeBytes": 377910
@@ -2136,10 +2144,10 @@
     {
       "folder": "serenity-chokepoint-investing",
       "name": "serenity-chokepoint-investing",
-      "description": "Use when analyzing stocks through @aleabitoreddit/Serenity-style supply-chain chokepoint thinking: AI/semi photonics, scarce physical bottlenecks, small-cap monopoly or duopoly nodes, catalyst timing, valuation mismatch, and risk controls. Model-agnostic skill for Codex, Claude Code, Cursor, Gemini CLI, Windsurf, and other agents that support SKILL.md. This skill supports investment research and stock analysis; it does not provide personalized financial advice.",
+      "description": "Use when analyzing stocks through @aleabitoreddit/Serenity-style supply-chain chokepoint thinking: AI/semi photonics, scarce physical bottlenecks, small-cap monopoly or duopoly nodes, catalyst timing, valuation mismatch, and risk controls. This skill supports investment research and stock analysis; it does not provide personalized financial advice.",
       "snapshotPath": "skills/serenity-chokepoint-investing",
       "hasSkillMd": true,
-      "sizeBytes": 62887
+      "sizeBytes": 85084
     },
     {
       "folder": "serenity-method",
@@ -2160,7 +2168,7 @@
     {
       "folder": "serenity-reply",
       "name": "serenity-reply",
-      "description": "| Serenity (@aleabitoreddit) 的思维框架与表达方式。基于 6 维度深度调研（1700+ 推文、Substack 长访谈、第三方分析、批评者观点）， 提炼 5 个核心心智模型、8 条决策启发式和完整的表达 DNA。 用途：作为 AI/半导体供应链投资的思维顾问，用 Serenity 的视角分析投资标的、审视决策、提供反馈。 当用户提到「用 Serenity 的视角」「aleabitoreddit 会怎么看」「Serenity 模式」「Serenity perspective」「用 aleabitoreddit 的角度」时使用。 即使用户只是说「帮我用 Serenity 的角度想想」「如果 Serenity 会怎么做」「切换到 Serenity」也应触发。",
+      "description": "Serenity (@aleabitoreddit) 的思维框架与表达方式。基于 6 维度深度调研（1700+ 推文、Substack 长访谈、第三方分析、批评者观点）， 提炼 5 个核心心智模型、8 条决策启发式和完整的表达 DNA。 用途：作为 AI/半导体供应链投资的思维顾问，用 Serenity 的视角分析投资标的、审视决策、提供反馈。 当用户提到「用 Serenity 的视角」「aleabitoreddit 会怎么看」「Serenity 模式」「Serenity perspective」「用 aleabitoreddit 的角度」时使用。 即使用户只是说「帮我用 Serenity 的角度想想」「如果 Serenity 会怎么做」「切换到 Serenity」也应触发。",
       "snapshotPath": "skills/serenity-reply",
       "hasSkillMd": true,
       "sizeBytes": 167324
@@ -2184,7 +2192,7 @@
     {
       "folder": "serenity-stock-choke",
       "name": "serenity-stock-choke",
-      "description": "| A股通用\"卡脖子\"选股技能。应用 Serenity（@aleabitoreddit）的供应链瓶颈理论， 对任意 A 股板块/产业链进行结构化分析，寻找\"一旦断货整个产业就停工\"的瓶颈环节， 并筛选该环节中具备技术壁垒和资本信号的小盘股。 触发词：分析XX板块、找XX卡脖子、serenity分析、A股瓶颈产业链 适用板块示例：电力、光模块、医疗器械、半导体设备、军工、新能源车等任意板块 数据源：neodata-financial-search（行情/研报/资金）+ westock-data（筹码/大宗/机构） ⚠️ 注意：本技能不预测大盘走势，不适用于纯题材炒作无实质产业逻辑的小票。",
+      "description": "A股通用\"卡脖子\"选股技能。应用 Serenity（@aleabitoreddit）的供应链瓶颈理论， 对任意 A 股板块/产业链进行结构化分析，寻找\"一旦断货整个产业就停工\"的瓶颈环节， 并筛选该环节中具备技术壁垒和资本信号的小盘股。 触发词：分析XX板块、找XX卡脖子、serenity分析、A股瓶颈产业链 适用板块示例：电力、光模块、医疗器械、半导体设备、军工、新能源车等任意板块 数据源：neodata-financial-search（行情/研报/资金）+ westock-data（筹码/大宗/机构） ⚠️ 注意：本技能不预测大盘走势，不适用于纯题材炒作无实质产业逻辑的小票。",
       "snapshotPath": "skills/serenity-stock-choke",
       "hasSkillMd": true,
       "sizeBytes": 20978
@@ -2200,7 +2208,7 @@
     {
       "folder": "serenity-zadanthony",
       "name": "serenity-zadanthony",
-      "description": "",
+      "description": "--- name: serenity-zadanthony description: 鐢?Serenity(@aleabitoreddit)鐨?渚涘簲閾惧崱鐐归€嗗悜\"鎶曡祫閫昏緫鍒嗘瀽鑲＄エ/鏉垮潡鈥斺€斿府浣犲垽鏂鎬庝箞鍒嗘瀽銆佸線鍝竴灞傛寲銆佷粈涔堜細璇佸疄鎴栬瘉浼€佸€间笉鍊煎緱鎶曘€傛妸甯傚満褰撶墿鐞嗙郴缁熻€岄潪浠ｇ爜鍒楄〃,鍏堝缓 thesis 鍐嶈皥鏍囩殑銆傚綋鐢ㄦ埛鑱婄編鑲?AI 渚涘簲閾?鍏夋ā鍧?CPO/纭呭厜/InP)/鍗婂浣?鍐呭瓨/NeoCloud/鐢靛姏娑插喎/鏈哄櫒浜虹瓑 AI 鍏ㄤ骇涓氶摼浠绘剰缁嗗垎鐨勬姇璧勫垎鏋?鎴栦富鍔?/serenity 鏃朵娇鐢ㄣ€?---",
       "snapshotPath": "skills/serenity-zadanthony",
       "hasSkillMd": true,
       "sizeBytes": 113324
@@ -2208,7 +2216,7 @@
     {
       "folder": "serenity-zongmin-yu",
       "name": "serenity-zongmin-yu",
-      "description": "| Activates AI infrastructure and semiconductor supply chain analysis. Trigger when: tracing hyperscaler AI capex to find bottleneck companies, analyzing semiconductor/photonics/memory/packaging supply chains, mapping BOM dependencies for AI hardware (GPUs, TPUs, ASICs, optical interconnects, HBM), evaluating supplier concentration in chip materials or critical components, asking \"who controls the critical input for AI buildout,\" or identifying small companies that trillion-dollar AI deployments depend on. Even if the user does not mention \"Serenity,\" proactively trigger when the topic involves AI infrastructure supply chain analysis, semiconductor bottleneck mapping, or upstream supplier tracing for AI hardware.",
+      "description": "Activates AI infrastructure and semiconductor supply chain analysis. Trigger when: tracing hyperscaler AI capex to find bottleneck companies, analyzing semiconductor/photonics/memory/packaging supply chains, mapping BOM dependencies for AI hardware (GPUs, TPUs, ASICs, optical interconnects, HBM), evaluating supplier concentration in chip materials or critical components, asking \"who controls the critical input for AI buildout,\" or identifying small companies that trillion-dollar AI deployments depend on. Even if the user does not mention \"Serenity,\" proactively trigger when the topic involves AI infrastructure supply chain analysis, semiconductor bottleneck mapping, or upstream supplier tracing for AI hardware.",
       "snapshotPath": "skills/serenity-zongmin-yu",
       "hasSkillMd": true,
       "sizeBytes": 10043
@@ -2376,10 +2384,10 @@
     {
       "folder": "token-budget-advisor",
       "name": "token-budget-advisor",
-      "description": ">- Offers the user an informed choice about how much response depth to consume before answering. Use this skill when the user explicitly wants to control response length, depth, or token budget. TRIGGER when: \"token budget\", \"token count\", \"token usage\", \"token limit\", \"response length\", \"answer depth\", \"short version\", \"brief answer\", \"detailed answer\", \"exhaustive answer\", \"respuesta corta vs larga\", \"cuántos tokens\", \"ahorrar tokens\", \"responde al 50%\", \"dame la versión corta\", \"quiero controlar cuánto usas\", or clear variants where the user is explicitly asking to control answer size or depth. DO NOT TRIGGER when: user has already specified a level in the current session (maintain it), the request is clearly a one-word answer, or \"token\" refers to auth/session/payment tokens rather than response size.",
+      "description": "Analyze prompts and offer depth / token-budget options BEFORE answering. Use this skill when the user wants to control token usage, tune response depth, choose between short and long answers, or optimize their prompt. Triggers on: \"tokens\", \"token budget\", \"depth\", \"consumption\", \"short vs long answer\", \"how many tokens\", \"save tokens\", \"answer at 50%\", \"give me the short version\", \"I want to control how much you use\", \"tune your response\", \"presupuesto de tokens\", \"profundidad\", \"responde al 50%\", \"dame la versión corta\", or any equivalent phrasing in English or Spanish. If the user wants to control length, detail or depth -- even without mentioning tokens explicitly -- this skill applies.",
       "snapshotPath": "skills/token-budget-advisor",
       "hasSkillMd": true,
-      "sizeBytes": 6105
+      "sizeBytes": 79457
     },
     {
       "folder": "ui-demo",

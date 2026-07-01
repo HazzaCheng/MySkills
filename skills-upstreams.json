@@ -86,6 +86,30 @@
       "path": ".",
       "source": "frontmatter repo"
     },
+    "academic-paper": {
+      "repo": "https://github.com/Imbad0202/academic-research-skills.git",
+      "ref": "main",
+      "path": "academic-paper",
+      "source": "user-requested install from academic-research-skills"
+    },
+    "academic-paper-reviewer": {
+      "repo": "https://github.com/Imbad0202/academic-research-skills.git",
+      "ref": "main",
+      "path": "academic-paper-reviewer",
+      "source": "user-requested install from academic-research-skills"
+    },
+    "academic-pipeline": {
+      "repo": "https://github.com/Imbad0202/academic-research-skills.git",
+      "ref": "main",
+      "path": "academic-pipeline",
+      "source": "user-requested install from academic-research-skills"
+    },
+    "deep-research": {
+      "repo": "https://github.com/Imbad0202/academic-research-skills.git",
+      "ref": "main",
+      "path": "deep-research",
+      "source": "user-requested install from academic-research-skills; replaces previous ECC snapshot"
+    },
     "react-performance": {
       "repo": "https://github.com/vercel-labs/agent-skills.git",
       "ref": "main",

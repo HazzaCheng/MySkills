@@ -1,10 +1,34 @@
 {
-  "generatedAt": "2026-06-23T14:21:35+08:00",
+  "generatedAt": "2026-07-01T14:39:36+08:00",
   "sourceComputer": "MacBook-Pro.local",
   "sourceRoot": "/Users/bytedance/.codex/skills",
   "note": "This repository snapshots non-system Codex skills from ~/.codex/skills. System and plugin-provided skills are intentionally not copied.",
-  "skillCount": 310,
+  "skillCount": 313,
   "skills": [
+    {
+      "folder": "academic-paper",
+      "name": "academic-paper",
+      "description": "12-agent academic paper writing pipeline. 11 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure/rebuttal-audit). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, audit my rebuttal, check my response draft, AI disclosure, 寫論文, 學術論文, 引導我寫論文, 審查意見, 評估回覆.",
+      "snapshotPath": "skills/academic-paper",
+      "hasSkillMd": true,
+      "sizeBytes": 876438
+    },
+    {
+      "folder": "academic-paper-reviewer",
+      "name": "academic-paper-reviewer",
+      "description": "Multi-perspective academic paper review with dynamic reviewer personas. Simulates 5 independent reviewers (EIC + 3 peer reviewers + Devil's Advocate) with field-specific expertise. Supports full review, re-review (verification), quick assessment, methodology focus, Socratic guided, and calibration modes. Triggers on: review paper, peer review, manuscript review, referee report, review my paper, critique paper, simulate review, editorial review, calibrate reviewer, reviewer calibration, measure reviewer accuracy.",
+      "snapshotPath": "skills/academic-paper-reviewer",
+      "hasSkillMd": true,
+      "sizeBytes": 321814
+    },
+    {
+      "folder": "academic-pipeline",
+      "name": "academic-pipeline",
+      "description": "Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise -> final integrity check -> finalize. Coordinates deep-research, academic-paper, and academic-paper-reviewer into a seamless 10-stage workflow with mandatory integrity verification, two-stage peer review, and reproducible quality gates. Triggers on: academic pipeline, research to paper, full paper workflow, paper pipeline, end-to-end paper, research-to-publication, complete paper workflow.",
+      "snapshotPath": "skills/academic-pipeline",
+      "hasSkillMd": true,
+      "sizeBytes": 474051
+    },
     {
       "folder": "accessibility",
       "name": "accessibility",
@@ -520,10 +544,10 @@
     {
       "folder": "deep-research",
       "name": "deep-research",
-      "description": "Multi-source deep research using firecrawl and exa MCPs. Searches the web, synthesizes findings, and delivers cited reports with source attribution. Use when the user wants thorough research on any topic with evidence and citations.",
+      "description": "Universal deep research agent team. 13-agent pipeline for rigorous academic research on any topic. 8 modes: full research, quick brief, paper review, lit-review, fact-check, three-way literature scan, Socratic guided research dialogue, and systematic review with optional meta-analysis. Covers research question formulation, Socratic mentoring, methodology design, systematic literature search, source verification, cross-source synthesis, risk of bias assessment, meta-analysis, APA 7.0 report compilation, editorial review, devil's advocate challenges, ethics review, and post-research literature monitoring. Triggers on: research, deep research, literature review, systematic review, meta-analysis, PRISMA, evidence synthesis, fact-check, WHY HOW WHAT papers, 3W literature scan, guide my research, help me think through, 研究, 深度研究, 文獻回顧, 文獻探討, 系統性回顧, 後設分析, 事實查核, 三段式文獻掃描, 引導我的研究, 幫我釐清, 幫我想想, 我不確定要研究什麼, 研究方向, 研究主題.",
       "snapshotPath": "skills/deep-research",
       "hasSkillMd": true,
-      "sizeBytes": 4786
+      "sizeBytes": 621308
     },
     {
       "folder": "defi-amm-security",

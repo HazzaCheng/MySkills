@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "notes": [
+    "Skills listed here are installed from package managers or installer CLIs on new machines.",
+    "They are intentionally not copied into skills/ as local snapshots.",
+    "Do not commit credentials or API keys; configure them as local environment variables."
+  ],
+  "skills": {
+    "weread-skills": {
+      "installCommand": "npx skills add Tencent/WeChatReading -g",
+      "repo": "https://github.com/Tencent/WeChatReading.git",
+      "ref": "main",
+      "path": "skills",
+      "lastSeenCommit": "315698a8da1810fab0bbf24a52b38a6960e54cdc",
+      "destination": "~/.agents/skills/weread-skills",
+      "auth": {
+        "env": "WEREAD_API_KEY",
+        "required": true,
+        "commitValue": false
+      },
+      "notes": "Install from the upstream package command on new machines instead of restoring an old snapshot."
+    }
+  }
+}

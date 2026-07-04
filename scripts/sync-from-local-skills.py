@@ -20,6 +20,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE = Path.home() / ".codex" / "skills"
+INSTALLERS_CONFIG = REPO_ROOT / "skills-installers.json"
 SKILL_BLOCK_RE = re.compile(
     r"(?ms)^description:\s*(.+?)(?:\r?\n---|\r?\n[a-zA-Z_-]+:)"
 )
@@ -32,6 +33,19 @@ def read_text(path: Path) -> str:
 def write_text(path: Path, value: str) -> None:
     with path.open("w", encoding="utf-8", newline="\n") as handle:
         handle.write(value)
+
+
+def load_installers() -> dict[str, object]:
+    if not INSTALLERS_CONFIG.is_file():
+        return {"skills": {}}
+    return json.loads(INSTALLERS_CONFIG.read_text(encoding="utf-8-sig"))
+
+
+def installer_skill_names(installers: dict[str, object]) -> set[str]:
+    skills = installers.get("skills", {})
+    if not isinstance(skills, dict):
+        return set()
+    return {str(name) for name in skills}
 
 
 def normalize_description(value: str) -> str:
@@ -65,7 +79,11 @@ def first_body_paragraph(raw: str) -> str:
     return re.sub(r"\s+", " ", " ".join(paragraph)).strip()
 
 
-def copy_snapshot(source_root: Path, snapshot_root: Path) -> list[Path]:
+def copy_snapshot(
+    source_root: Path,
+    snapshot_root: Path,
+    excluded_names: set[str],
+) -> list[Path]:
     if source_root.resolve() == snapshot_root.resolve():
         raise SystemExit("Source skills root cannot be the repository skills snapshot.")
 
@@ -75,7 +93,11 @@ def copy_snapshot(source_root: Path, snapshot_root: Path) -> list[Path]:
             shutil.rmtree(existing)
 
     skill_dirs = sorted(
-        path for path in source_root.iterdir() if path.is_dir() and path.name != ".system"
+        path
+        for path in source_root.iterdir()
+        if path.is_dir()
+        and path.name != ".system"
+        and path.name not in excluded_names
     )
     for skill_dir in skill_dirs:
         shutil.copytree(skill_dir, snapshot_root / skill_dir.name)
@@ -117,6 +139,30 @@ def build_readme(manifest: dict[str, object]) -> str:
         description = str(item["description"]).replace("|", r"\|")
         rows.append(f"| {item['folder']} | {item['name']} | {description} |")
 
+    installers = load_installers()
+    installer_rows = []
+    skills = installers.get("skills", {})
+    if isinstance(skills, dict):
+        for name, entry in sorted(skills.items()):
+            if not isinstance(entry, dict):
+                continue
+            command = str(entry.get("installCommand", "")).replace("|", r"\|")
+            notes = str(entry.get("notes", "")).replace("|", r"\|")
+            auth = entry.get("auth", {})
+            if isinstance(auth, dict) and auth.get("env"):
+                notes = f"Set `{auth['env']}` locally after install."
+            installer_rows.append(f"| {name} | `{command}` | {notes} |")
+
+    installer_section = ""
+    if installer_rows:
+        installer_section = f"""
+Package-managed skills listed in `skills-installers.json` are installed from their package command instead of copied from this repo. Current installer-backed skills:
+
+| Skill | Install command | Notes |
+|---|---|---|
+{chr(10).join(installer_rows)}
+""".rstrip()
+
     return f"""# MySkills
 
 Personal Codex skills shared across Windows and macOS machines.
@@ -133,6 +179,7 @@ On Windows this usually resolves to `%USERPROFILE%\\.codex\\skills`. On macOS it
 
 - `skills/`: a snapshot of each user-installed skill folder.
 - `skills-manifest.json`: machine-readable inventory generated from local `SKILL.md` files.
+- `skills-installers.json`: install recipes for package-managed skills that should not be copied from old machines.
 - `skills-upstreams.json`: upstream repository map for skills with known sources.
 - `scripts/install-local-skills.py`: cross-platform restore script for Windows and macOS.
 - `scripts/sync-from-local-skills.py`: cross-platform sync script for Windows and macOS.
@@ -154,6 +201,7 @@ py -3 scripts\\install-local-skills.py
 ```
 
 The script copies every folder in `skills/` into `~/.codex/skills`.
+{installer_section}
 
 ## Update this repo after installing new skills
 
@@ -173,7 +221,7 @@ For skills installed through package runners, for example:
 npx skills add Tencent/WeChatReading -g
 ```
 
-keep the installed files in `skills/<name>/` and record the package or upstream source in `skills-upstreams.json`. The command is provenance, not a replacement for the snapshot. Do not commit credentials or API keys; keep them in local environment variables.
+add them to `skills-installers.json` instead of committing the installed `SKILL.md` files. The command is the restore path for new machines. Do not commit credentials or API keys; keep them in local environment variables.
 
 All generated text files are written as UTF-8 without BOM so both macOS/Linux tools and Windows terminals can read them cleanly.
 
@@ -249,7 +297,9 @@ def main() -> int:
         raise SystemExit(f"Cannot find Codex skills root: {args.source}")
 
     snapshot = REPO_ROOT / "skills"
-    source_dirs = copy_snapshot(args.source, snapshot)
+    installers = load_installers()
+    excluded_names = installer_skill_names(installers)
+    source_dirs = copy_snapshot(args.source, snapshot, excluded_names)
     items = [
         parse_skill(source_dir, snapshot / source_dir.name) for source_dir in source_dirs
     ]
@@ -258,7 +308,7 @@ def main() -> int:
         "generatedAt": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
         "sourceComputer": os.environ.get("COMPUTERNAME") or socket.gethostname(),
         "sourceRoot": str(args.source),
-        "note": "This repository snapshots non-system user skills, usually from ~/.codex/skills. Package-runner installs may originate from ~/.agents/skills and are tracked in skills-upstreams.json. System and plugin-provided skills are intentionally not copied.",
+        "note": "This repository snapshots non-system user skills, usually from ~/.codex/skills. Package-managed skills listed in skills-installers.json are intentionally not copied. System and plugin-provided skills are intentionally not copied.",
         "skillCount": len(items),
         "skills": items,
     }
@@ -269,7 +319,7 @@ def main() -> int:
     print(f"Synced {len(items)} skills from {args.source}")
 
     if args.commit:
-        run_git(["add", "README.md", "skills-manifest.json", "skills-upstreams.json", "scripts", "skills"])
+        run_git(["add", "README.md", "skills-manifest.json", "skills-installers.json", "skills-upstreams.json", "scripts", "skills"])
         status = run_git(["status", "--short"]).stdout.strip()
         if status:
             run_git(["commit", "-m", args.message])

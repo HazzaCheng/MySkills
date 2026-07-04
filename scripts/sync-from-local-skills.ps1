@@ -8,6 +8,7 @@ param(
 $ErrorActionPreference = 'Stop'
 $RepoRoot = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $Snapshot = Join-Path $RepoRoot 'skills'
+$InstallersConfig = Join-Path $RepoRoot 'skills-installers.json'
 
 function Set-Utf8NoBomContent {
   param(
@@ -25,8 +26,18 @@ if (-not (Test-Path -LiteralPath $SkillsRoot)) {
 
 New-Item -ItemType Directory -Force -Path $Snapshot | Out-Null
 
+$PackageManagedSkillNames = @()
+if (Test-Path -LiteralPath $InstallersConfig) {
+  $InstallerConfigJson = Get-Content -LiteralPath $InstallersConfig -Raw -Encoding UTF8 | ConvertFrom-Json
+  if ($InstallerConfigJson.skills) {
+    $PackageManagedSkillNames = @($InstallerConfigJson.skills.PSObject.Properties.Name)
+  }
+}
+
 Get-ChildItem -LiteralPath $Snapshot -Directory | Remove-Item -Recurse -Force
-$SkillDirs = Get-ChildItem -LiteralPath $SkillsRoot -Directory | Where-Object { $_.Name -ne '.system' } | Sort-Object Name
+$SkillDirs = Get-ChildItem -LiteralPath $SkillsRoot -Directory | Where-Object {
+  $_.Name -ne '.system' -and $PackageManagedSkillNames -notcontains $_.Name
+} | Sort-Object Name
 
 foreach ($dir in $SkillDirs) {
   $dest = Join-Path $Snapshot $dir.Name
@@ -66,13 +77,25 @@ $Manifest = [pscustomobject]@{
   generatedAt = (Get-Date).ToString('yyyy-MM-ddTHH:mm:ssK')
   sourceComputer = $env:COMPUTERNAME
   sourceRoot = $SkillsRoot
-  note = 'This repository snapshots non-system user skills, usually from ~/.codex/skills. Package-runner installs may originate from ~/.agents/skills and are tracked in skills-upstreams.json. System and plugin-provided skills are intentionally not copied.'
+  note = 'This repository snapshots non-system user skills, usually from ~/.codex/skills. Package-managed skills listed in skills-installers.json are intentionally not copied. System and plugin-provided skills are intentionally not copied.'
   skillCount = $Items.Count
   skills = $Items
 }
 
 $ManifestJson = $Manifest | ConvertTo-Json -Depth 6
 Set-Utf8NoBomContent -Path (Join-Path $RepoRoot 'skills-manifest.json') -Value $ManifestJson
+
+$InstallerRows = ''
+if ($InstallerConfigJson -and $InstallerConfigJson.skills) {
+  $InstallerRows = ($InstallerConfigJson.skills.PSObject.Properties | Sort-Object Name | ForEach-Object {
+    $command = [string]$_.Value.installCommand
+    $note = [string]$_.Value.notes
+    if ($_.Value.auth -and $_.Value.auth.env) {
+      $note = "Set ``$($_.Value.auth.env)`` locally after install."
+    }
+    "| $($_.Name) | ``$command`` | $note |"
+  }) -join "`r`n"
+}
 
 $Rows = ($Items | ForEach-Object { "| $($_.folder) | $($_.name) | $($_.description.Replace('|','/')) |" }) -join "`r`n"
 $ReadmeTemplate = @'
@@ -92,6 +115,7 @@ On Windows this usually resolves to `%USERPROFILE%\.codex\skills`. On macOS it r
 
 - `skills/`: a snapshot of each user-installed skill folder.
 - `skills-manifest.json`: machine-readable inventory generated from local `SKILL.md` files.
+- `skills-installers.json`: install recipes for package-managed skills that should not be copied from old machines.
 - `scripts/install-local-skills.py`: cross-platform restore script for Windows and macOS.
 - `scripts/sync-from-local-skills.py`: cross-platform sync script for Windows and macOS.
 - `scripts/*.ps1`: legacy Windows PowerShell helpers kept for convenience.
@@ -112,6 +136,12 @@ py -3 scripts\install-local-skills.py
 
 The script copies every folder in `skills/` into `~/.codex/skills`.
 
+Package-managed skills listed in `skills-installers.json` are installed from their package command instead of copied from this repo. Current installer-backed skills:
+
+| Skill | Install command | Notes |
+|---|---|---|
+__INSTALLER_ROWS__
+
 ## Update this repo after installing new skills
 
 From this repo root, run one of:
@@ -130,7 +160,7 @@ For skills installed through package runners, for example:
 npx skills add Tencent/WeChatReading -g
 ~~~
 
-keep the installed files in `skills/<name>/` and record the package or upstream source in `skills-upstreams.json`. The command is provenance, not a replacement for the snapshot. Do not commit credentials or API keys; keep them in local environment variables.
+add them to `skills-installers.json` instead of committing the installed `SKILL.md` files. The command is the restore path for new machines. Do not commit credentials or API keys; keep them in local environment variables.
 
 All generated text files are written as UTF-8 without BOM so both macOS/Linux tools and Windows terminals can read them cleanly.
 
@@ -142,13 +172,13 @@ Count: __SKILL_COUNT__
 |---|---|---|
 __SKILL_ROWS__
 '@
-$Readme = $ReadmeTemplate.Replace('__SKILL_COUNT__', [string]$Items.Count).Replace('__SKILL_ROWS__', $Rows)
+$Readme = $ReadmeTemplate.Replace('__SKILL_COUNT__', [string]$Items.Count).Replace('__SKILL_ROWS__', $Rows).Replace('__INSTALLER_ROWS__', $InstallerRows)
 Set-Utf8NoBomContent -Path (Join-Path $RepoRoot 'README.md') -Value $Readme
 
 Write-Host "Synced $($Items.Count) skills from $SkillsRoot"
 
 if ($Commit) {
-  git -C $RepoRoot add README.md skills-manifest.json skills-upstreams.json scripts skills
+  git -C $RepoRoot add README.md skills-manifest.json skills-installers.json skills-upstreams.json scripts skills
   $changes = git -C $RepoRoot status --short
   if ($changes) {
     git -C $RepoRoot commit -m $Message

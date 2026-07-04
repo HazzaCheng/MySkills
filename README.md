@@ -48,6 +48,14 @@ python3 scripts/sync-from-local-skills.py --commit --push
 py -3 scripts\sync-from-local-skills.py --commit --push
 ```
 
+For skills installed through package runners, for example:
+
+```bash
+npx skills add Tencent/WeChatReading -g
+```
+
+keep the installed files in `skills/<name>/` and record the package or upstream source in `skills-upstreams.json`. The command is provenance, not a replacement for the snapshot. Do not commit credentials or API keys; keep them in local environment variables.
+
 All generated text files are written as UTF-8 without BOM so both macOS/Linux tools and Windows terminals can read them cleanly.
 
 ## Check upstream skill updates
@@ -86,7 +94,7 @@ Statuses:
 
 ## Skill Inventory
 
-Count: 313
+Count: 314
 
 | Folder | Skill name | Description |
 |---|---|---|
@@ -400,6 +408,7 @@ Count: 313
 | videodb | videodb | See, Understand, Act on video and audio. See- ingest from local files, URLs, RTSP/live feeds, or live record desktop; return realtime context and playable stream links. Understand- extract frames, build visual/semantic/temporal indexes, and search moments with timestamps and auto-clips. Act- transcode and normalize (codec, fps, resolution, aspect ratio), perform timeline edits (subtitles, text/image overlays, branding, audio overlays, dubbing, translation), generate media assets (image, audio, video), and create real time alerts for events from live streams or desktop capture. |
 | visa-doc-translate | visa-doc-translate | Translate visa application documents (images) to English and create a bilingual PDF with original and translation |
 | vite-patterns | vite-patterns | Vite build tool patterns including config, plugins, HMR, env variables, proxy setup, SSR, library mode, dependency pre-bundling, and build optimization. Activate when working with vite.config.ts, Vite plugins, or Vite-based projects. |
+| weread-skills | weread-skills | 微信读书助手 — 搜索书籍、管理书架、查看笔记划线、浏览书评、阅读统计、发现推荐好书 |
 | windows-desktop-e2e | windows-desktop-e2e | E2E testing for Windows native desktop apps (WPF, WinForms, Win32/MFC, Qt) using pywinauto and Windows UI Automation. |
 | workspace-surface-audit | workspace-surface-audit | Audit the active repo, MCP servers, plugins, connectors, env surfaces, and harness setup, then recommend the highest-value ECC-native skills, hooks, agents, and operator workflows. Use when the user wants help setting up Claude Code or understanding what capabilities are actually available in their environment. |
 | x-api | x-api | X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, rate limits, and platform-native content posting. Use when the user wants to interact with X programmatically. |

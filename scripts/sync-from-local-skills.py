@@ -167,6 +167,14 @@ python3 scripts/sync-from-local-skills.py --commit --push
 py -3 scripts\\sync-from-local-skills.py --commit --push
 ```
 
+For skills installed through package runners, for example:
+
+```bash
+npx skills add Tencent/WeChatReading -g
+```
+
+keep the installed files in `skills/<name>/` and record the package or upstream source in `skills-upstreams.json`. The command is provenance, not a replacement for the snapshot. Do not commit credentials or API keys; keep them in local environment variables.
+
 All generated text files are written as UTF-8 without BOM so both macOS/Linux tools and Windows terminals can read them cleanly.
 
 ## Check upstream skill updates
@@ -250,7 +258,7 @@ def main() -> int:
         "generatedAt": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
         "sourceComputer": os.environ.get("COMPUTERNAME") or socket.gethostname(),
         "sourceRoot": str(args.source),
-        "note": "This repository snapshots non-system Codex skills from ~/.codex/skills. System and plugin-provided skills are intentionally not copied.",
+        "note": "This repository snapshots non-system user skills, usually from ~/.codex/skills. Package-runner installs may originate from ~/.agents/skills and are tracked in skills-upstreams.json. System and plugin-provided skills are intentionally not copied.",
         "skillCount": len(items),
         "skills": items,
     }
@@ -261,7 +269,7 @@ def main() -> int:
     print(f"Synced {len(items)} skills from {args.source}")
 
     if args.commit:
-        run_git(["add", "README.md", "skills-manifest.json", "scripts", "skills"])
+        run_git(["add", "README.md", "skills-manifest.json", "skills-upstreams.json", "scripts", "skills"])
         status = run_git(["status", "--short"]).stdout.strip()
         if status:
             run_git(["commit", "-m", args.message])

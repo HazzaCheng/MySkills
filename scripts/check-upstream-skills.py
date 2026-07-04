@@ -167,6 +167,8 @@ def run_command(args: list[str], cwd: Path | None = None) -> subprocess.Complete
         args,
         cwd=cwd,
         text=True,
+        encoding="utf-8",
+        errors="replace",
         capture_output=True,
         check=False,
     )

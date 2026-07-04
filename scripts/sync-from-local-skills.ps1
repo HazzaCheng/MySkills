@@ -66,7 +66,7 @@ $Manifest = [pscustomobject]@{
   generatedAt = (Get-Date).ToString('yyyy-MM-ddTHH:mm:ssK')
   sourceComputer = $env:COMPUTERNAME
   sourceRoot = $SkillsRoot
-  note = 'This repository snapshots non-system Codex skills from ~/.codex/skills. System and plugin-provided skills are intentionally not copied.'
+  note = 'This repository snapshots non-system user skills, usually from ~/.codex/skills. Package-runner installs may originate from ~/.agents/skills and are tracked in skills-upstreams.json. System and plugin-provided skills are intentionally not copied.'
   skillCount = $Items.Count
   skills = $Items
 }
@@ -124,6 +124,14 @@ python3 scripts/sync-from-local-skills.py --commit --push
 py -3 scripts\sync-from-local-skills.py --commit --push
 ~~~
 
+For skills installed through package runners, for example:
+
+~~~bash
+npx skills add Tencent/WeChatReading -g
+~~~
+
+keep the installed files in `skills/<name>/` and record the package or upstream source in `skills-upstreams.json`. The command is provenance, not a replacement for the snapshot. Do not commit credentials or API keys; keep them in local environment variables.
+
 All generated text files are written as UTF-8 without BOM so both macOS/Linux tools and Windows terminals can read them cleanly.
 
 ## Skill Inventory
@@ -140,7 +148,7 @@ Set-Utf8NoBomContent -Path (Join-Path $RepoRoot 'README.md') -Value $Readme
 Write-Host "Synced $($Items.Count) skills from $SkillsRoot"
 
 if ($Commit) {
-  git -C $RepoRoot add README.md skills-manifest.json scripts skills
+  git -C $RepoRoot add README.md skills-manifest.json skills-upstreams.json scripts skills
   $changes = git -C $RepoRoot status --short
   if ($changes) {
     git -C $RepoRoot commit -m $Message

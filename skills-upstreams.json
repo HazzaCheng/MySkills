@@ -493,6 +493,12 @@
       "ref": "main",
       "path": "skills/creative/sketch",
       "source": "Hermes bundled/optional skill path matched from original backup metadata"
+    },
+    "weread-skills": {
+      "repo": "https://github.com/Tencent/WeChatReading.git",
+      "ref": "main",
+      "path": "skills",
+      "source": "skills CLI: npx skills add Tencent/WeChatReading -g"
     }
   }
 }

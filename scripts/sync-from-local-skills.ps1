@@ -31,6 +31,11 @@ if (Test-Path -LiteralPath $InstallersConfig) {
   $InstallerConfigJson = Get-Content -LiteralPath $InstallersConfig -Raw -Encoding UTF8 | ConvertFrom-Json
   if ($InstallerConfigJson.skills) {
     $PackageManagedSkillNames = @($InstallerConfigJson.skills.PSObject.Properties.Name)
+    foreach ($installer in $InstallerConfigJson.skills.PSObject.Properties) {
+      if ($installer.Value.managedSkillNames) {
+        $PackageManagedSkillNames += @($installer.Value.managedSkillNames | ForEach-Object { [string]$_ })
+      }
+    }
   }
 }
 
@@ -88,7 +93,16 @@ Set-Utf8NoBomContent -Path (Join-Path $RepoRoot 'skills-manifest.json') -Value $
 $InstallerRows = ''
 if ($InstallerConfigJson -and $InstallerConfigJson.skills) {
   $InstallerRows = ($InstallerConfigJson.skills.PSObject.Properties | Sort-Object Name | ForEach-Object {
+    $managedCsv = ''
+    if ($_.Value.managedSkillNames) {
+      $managedCsv = (@($_.Value.managedSkillNames | ForEach-Object { [string]$_ }) -join ',')
+    }
     $command = [string]$_.Value.installCommand
+    if ($_.Value.displayInstallCommand) {
+      $command = [string]$_.Value.displayInstallCommand
+    } else {
+      $command = $command.Replace('{managedSkillNamesCsv}', $managedCsv)
+    }
     $note = [string]$_.Value.notes
     if ($_.Value.auth -and $_.Value.auth.env) {
       $note = "Set ``$($_.Value.auth.env)`` locally after install."

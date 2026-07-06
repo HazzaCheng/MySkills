@@ -45,7 +45,24 @@ def installer_skill_names(installers: dict[str, object]) -> set[str]:
     skills = installers.get("skills", {})
     if not isinstance(skills, dict):
         return set()
-    return {str(name) for name in skills}
+
+    names: set[str] = set()
+    for name, entry in skills.items():
+        names.add(str(name))
+        if isinstance(entry, dict):
+            managed_names = entry.get("managedSkillNames", [])
+            if isinstance(managed_names, list):
+                names.update(str(item) for item in managed_names)
+    return names
+
+
+def resolved_install_command(entry: dict[str, object]) -> str:
+    command = str(entry.get("installCommand", ""))
+    managed_names = entry.get("managedSkillNames", [])
+    if isinstance(managed_names, list):
+        csv = ",".join(str(name) for name in managed_names)
+        command = command.replace("{managedSkillNamesCsv}", csv)
+    return command
 
 
 def normalize_description(value: str) -> str:
@@ -146,7 +163,9 @@ def build_readme(manifest: dict[str, object]) -> str:
         for name, entry in sorted(skills.items()):
             if not isinstance(entry, dict):
                 continue
-            command = str(entry.get("installCommand", "")).replace("|", r"\|")
+            command = str(
+                entry.get("displayInstallCommand") or resolved_install_command(entry)
+            ).replace("|", r"\|")
             notes = str(entry.get("notes", "")).replace("|", r"\|")
             auth = entry.get("auth", {})
             if isinstance(auth, dict) and auth.get("env"):

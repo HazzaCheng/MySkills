@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zotero Paper Curator"
+  short_description: "Add papers to Zotero with notes and tags"
+  default_prompt: "Use $zotero-paper-curator to add this summarized paper to Zotero with a suitable collection, note, and tags."

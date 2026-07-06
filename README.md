@@ -102,7 +102,7 @@ Statuses:
 
 ## Skill Inventory
 
-Count: 119
+Count: 121
 
 | Folder | Skill name | Description |
 |---|---|---|
@@ -180,6 +180,7 @@ Count: 119
 | lark-workflow-meeting-summary | lark-workflow-meeting-summary | 会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。 |
 | lark-workflow-standup-report | lark-workflow-standup-report | 日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。 |
 | marketing-campaign | marketing-campaign | End-to-end marketing campaign planning and execution. Covers audience research, positioning, campaign angle definition, landing page copy, email sequences, social posts, ad copy, short-form video scripts, and content calendars. Use as the orchestration layer for multi-channel product launches. |
+| ml-paper-reader-cn | ml-paper-reader-cn | Chinese structured close reading of machine learning, AI, deep learning, NLP, CV, benchmark, systems, and technical research papers, with detailed experiment extraction. Use when the user asks in Chinese or English to read, summarize, explain, analyze, or take notes on a single paper, arXiv link, PDF, Hugging Face paper page, academic article, technical blog, or report, especially when they want sections such as purpose, challenges, method, key concepts, contributions, experiments, conclusion, limitations, and future work. |
 | motion-advanced | motion-advanced | Advanced motion patterns for React / Next.js — drag & drop, gestures, text animations, SVG path drawing, custom hooks, imperative sequences (useAnimate), loaders, and the full API decision tree. Requires motion-foundations. |
 | motion-foundations | motion-foundations | Motion tokens, spring presets, performance rules, device adaptation, accessibility enforcement, and SSR safety for React / Next.js using motion/react. Foundation layer — all other motion skills depend on this. |
 | motion-patterns | motion-patterns | Production-ready animation patterns for React / Next.js — button, modal, toast, stagger, page transitions, exit animations, scroll, and layout — built on motion-foundations tokens and springs. |
@@ -225,3 +226,4 @@ Count: 119
 | token-budget-advisor | token-budget-advisor | Analyze prompts and offer depth / token-budget options BEFORE answering. Use this skill when the user wants to control token usage, tune response depth, choose between short and long answers, or optimize their prompt. Triggers on: "tokens", "token budget", "depth", "consumption", "short vs long answer", "how many tokens", "save tokens", "answer at 50%", "give me the short version", "I want to control how much you use", "tune your response", "presupuesto de tokens", "profundidad", "responde al 50%", "dame la versión corta", or any equivalent phrasing in English or Spanish. If the user wants to control length, detail or depth -- even without mentioning tokens explicitly -- this skill applies. |
 | uncloud | uncloud | Use when managing an Uncloud cluster — deploying services, configuring Caddy ingress, adding static proxy routes for non-cluster devices, publishing ports, scaling, inspecting logs, or managing machines and volumes with the `uc` CLI. |
 | vite-patterns | vite-patterns | Vite build tool patterns including config, plugins, HMR, env variables, proxy setup, SSR, library mode, dependency pre-bundling, and build optimization. Activate when working with vite.config.ts, Vite plugins, or Vite-based projects. |
+| zotero-paper-curator | zotero-paper-curator | Add or update machine learning papers in the user's local Zotero library, choose suitable existing collections, attach a PDF, add a Chinese paper summary as a Zotero child note, and apply high-quality tags. Use when the user asks to add a summarized paper, arXiv/PDF paper, or paper reading note to Zotero; classify a paper in Zotero; or reuse/create Zotero tags based on paper semantics. |

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ML Paper Reader CN"
+  short_description: "Chinese close reading for ML papers"
+  default_prompt: "Use $ml-paper-reader-cn to read this machine learning paper and produce a structured Chinese summary with detailed experiments."

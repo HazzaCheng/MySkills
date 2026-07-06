@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-06T10:48:01+08:00",
+  "generatedAt": "2026-07-06T10:52:31+08:00",
   "sourceComputer": "MacBook-Pro.local",
   "sourceRoot": "/Users/bytedance/.codex/skills",
   "note": "This repository snapshots non-system user skills, usually from ~/.codex/skills. Package-managed skills listed in skills-installers.json are intentionally not copied. System and plugin-provided skills are intentionally not copied.",
-  "skillCount": 119,
+  "skillCount": 121,
   "skills": [
     {
       "folder": "academic-paper",
@@ -598,6 +598,14 @@
       "sizeBytes": 5176
     },
     {
+      "folder": "ml-paper-reader-cn",
+      "name": "ml-paper-reader-cn",
+      "description": "Chinese structured close reading of machine learning, AI, deep learning, NLP, CV, benchmark, systems, and technical research papers, with detailed experiment extraction. Use when the user asks in Chinese or English to read, summarize, explain, analyze, or take notes on a single paper, arXiv link, PDF, Hugging Face paper page, academic article, technical blog, or report, especially when they want sections such as purpose, challenges, method, key concepts, contributions, experiments, conclusion, limitations, and future work.",
+      "snapshotPath": "skills/ml-paper-reader-cn",
+      "hasSkillMd": true,
+      "sizeBytes": 7738
+    },
+    {
       "folder": "motion-advanced",
       "name": "motion-advanced",
       "description": "Advanced motion patterns for React / Next.js — drag & drop, gestures, text animations, SVG path drawing, custom hooks, imperative sequences (useAnimate), loaders, and the full API decision tree. Requires motion-foundations.",
@@ -956,6 +964,14 @@
       "snapshotPath": "skills/vite-patterns",
       "hasSkillMd": true,
       "sizeBytes": 17115
+    },
+    {
+      "folder": "zotero-paper-curator",
+      "name": "zotero-paper-curator",
+      "description": "Add or update machine learning papers in the user's local Zotero library, choose suitable existing collections, attach a PDF, add a Chinese paper summary as a Zotero child note, and apply high-quality tags. Use when the user asks to add a summarized paper, arXiv/PDF paper, or paper reading note to Zotero; classify a paper in Zotero; or reuse/create Zotero tags based on paper semantics.",
+      "snapshotPath": "skills/zotero-paper-curator",
+      "hasSkillMd": true,
+      "sizeBytes": 25997
     }
   ]
 }

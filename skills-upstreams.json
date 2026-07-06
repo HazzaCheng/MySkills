@@ -835,6 +835,20 @@
       "ref": "main",
       "path": "skills/vite-patterns",
       "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "ml-paper-reader-cn": {
+      "repo": "local-only",
+      "ref": null,
+      "path": "skills/ml-paper-reader-cn",
+      "source": "local-only skill copied from ~/.codex/skills; no upstream repo identified",
+      "enabled": false
+    },
+    "zotero-paper-curator": {
+      "repo": "local-only",
+      "ref": null,
+      "path": "skills/zotero-paper-curator",
+      "source": "local-only skill copied from ~/.codex/skills; no upstream repo identified",
+      "enabled": false
     }
   }
 }

@@ -224,7 +224,8 @@
         "workspace-surface-audit",
         "x-api"
       ],
-      "notes": "Install ECC skills that are present in the ecc-universal npm package. ECC skills not currently shipped in that package remain as repository snapshots."
+      "notes": "Install ECC skills that are present in the ecc-universal npm package. ECC skills not currently shipped in that package remain as repository snapshots.",
+      "lastSeenPackageVersion": "2.0.0"
     }
   }
 }

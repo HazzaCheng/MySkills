@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T10:35:55+08:00",
+  "generatedAt": "2026-07-06T10:48:01+08:00",
   "sourceComputer": "MacBook-Pro.local",
   "sourceRoot": "/Users/bytedance/.codex/skills",
   "note": "This repository snapshots non-system user skills, usually from ~/.codex/skills. Package-managed skills listed in skills-installers.json are intentionally not copied. System and plugin-provided skills are intentionally not copied.",
@@ -11,7 +11,7 @@
       "description": "12-agent academic paper writing pipeline. 11 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure/rebuttal-audit). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, audit my rebuttal, check my response draft, AI disclosure, 寫論文, 學術論文, 引導我寫論文, 審查意見, 評估回覆.",
       "snapshotPath": "skills/academic-paper",
       "hasSkillMd": true,
-      "sizeBytes": 876438
+      "sizeBytes": 870529
     },
     {
       "folder": "academic-paper-reviewer",
@@ -19,7 +19,7 @@
       "description": "Multi-perspective academic paper review with dynamic reviewer personas. Simulates 5 independent reviewers (EIC + 3 peer reviewers + Devil's Advocate) with field-specific expertise. Supports full review, re-review (verification), quick assessment, methodology focus, Socratic guided, and calibration modes. Triggers on: review paper, peer review, manuscript review, referee report, review my paper, critique paper, simulate review, editorial review, calibrate reviewer, reviewer calibration, measure reviewer accuracy.",
       "snapshotPath": "skills/academic-paper-reviewer",
       "hasSkillMd": true,
-      "sizeBytes": 321814
+      "sizeBytes": 322315
     },
     {
       "folder": "academic-pipeline",
@@ -27,7 +27,7 @@
       "description": "Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise -> final integrity check -> finalize. Coordinates deep-research, academic-paper, and academic-paper-reviewer into a seamless 10-stage workflow with mandatory integrity verification, two-stage peer review, and reproducible quality gates. Triggers on: academic pipeline, research to paper, full paper workflow, paper pipeline, end-to-end paper, research-to-publication, complete paper workflow.",
       "snapshotPath": "skills/academic-pipeline",
       "hasSkillMd": true,
-      "sizeBytes": 474051
+      "sizeBytes": 473153
     },
     {
       "folder": "accessibility",
@@ -35,7 +35,7 @@
       "description": "Design, implement, and audit inclusive digital products using WCAG 2.2 Level AA standards. Use this skill to generate semantic ARIA for Web and accessibility traits for Web and Native platforms (iOS/Android).",
       "snapshotPath": "skills/accessibility",
       "hasSkillMd": true,
-      "sizeBytes": 6406
+      "sizeBytes": 6418
     },
     {
       "folder": "agent-eval",
@@ -43,7 +43,7 @@
       "description": "Head-to-head comparison of coding agents (Claude Code, Aider, Codex, etc.) on custom tasks with pass rate, cost, time, and consistency metrics",
       "snapshotPath": "skills/agent-eval",
       "hasSkillMd": true,
-      "sizeBytes": 4526
+      "sizeBytes": 4538
     },
     {
       "folder": "agent-payment-x402",
@@ -51,7 +51,7 @@
       "description": "Add x402 payment execution to AI agents with per-task budgets, spending controls, and non-custodial wallets. Supports Base through agentwallet-sdk and X Layer through OKX Payments / OKX Agent Payments Protocol.",
       "snapshotPath": "skills/agent-payment-x402",
       "hasSkillMd": true,
-      "sizeBytes": 10580
+      "sizeBytes": 10592
     },
     {
       "folder": "architecture-decision-records",
@@ -59,7 +59,7 @@
       "description": "Capture architectural decisions made during Claude Code sessions as structured ADRs. Auto-detects decision moments, records context, alternatives considered, and rationale. Maintains an ADR log so future developers understand why the codebase is shaped the way it is.",
       "snapshotPath": "skills/architecture-decision-records",
       "hasSkillMd": true,
-      "sizeBytes": 7119
+      "sizeBytes": 7131
     },
     {
       "folder": "arxiv",
@@ -75,7 +75,7 @@
       "description": "Transform Claude Code into a fully autonomous agent system with persistent memory, scheduled operations, computer use, and task queuing. Replaces standalone agent frameworks (Hermes, AutoGPT) by leveraging Claude Code's native crons, dispatch, MCP tools, and memory. Use when the user wants continuous autonomous operation, scheduled tasks, or a self-directing agent loop.",
       "snapshotPath": "skills/autonomous-agent-harness",
       "hasSkillMd": true,
-      "sizeBytes": 10848
+      "sizeBytes": 10860
     },
     {
       "folder": "benchmark",
@@ -83,7 +83,7 @@
       "description": "Use this skill to measure performance baselines, detect regressions before/after PRs, and compare stack alternatives.",
       "snapshotPath": "skills/benchmark",
       "hasSkillMd": true,
-      "sizeBytes": 2331
+      "sizeBytes": 2343
     },
     {
       "folder": "browser-qa",
@@ -91,7 +91,7 @@
       "description": "Use this skill to automate visual testing and UI interaction verification using browser automation after deploying features.",
       "snapshotPath": "skills/browser-qa",
       "hasSkillMd": true,
-      "sizeBytes": 2614
+      "sizeBytes": 3727
     },
     {
       "folder": "bun-runtime",
@@ -99,7 +99,7 @@
       "description": "Bun as runtime, package manager, bundler, and test runner. When to choose Bun vs Node, migration notes, and Vercel support.",
       "snapshotPath": "skills/bun-runtime",
       "hasSkillMd": true,
-      "sizeBytes": 2596
+      "sizeBytes": 2608
     },
     {
       "folder": "canary-watch",
@@ -107,7 +107,7 @@
       "description": "Use this skill to monitor and verify a deployed URL after releases — checks HTTP endpoints, SSE streams, static assets, console errors, and performance regressions after deploys, merges, or dependency upgrades. Smoke / canary / post-deploy verification.",
       "snapshotPath": "skills/canary-watch",
       "hasSkillMd": true,
-      "sizeBytes": 3116
+      "sizeBytes": 3128
     },
     {
       "folder": "ck",
@@ -123,7 +123,7 @@
       "description": "Design one-off HTML artifacts (landing, deck, prototype).",
       "snapshotPath": "skills/claude-design",
       "hasSkillMd": true,
-      "sizeBytes": 19859
+      "sizeBytes": 25117
     },
     {
       "folder": "click-path-audit",
@@ -131,7 +131,7 @@
       "description": "Trace every user-facing button/touchpoint through its full state change sequence to find bugs where functions individually work but cancel each other out, produce wrong final state, or leave the UI in an inconsistent state. Use when: systematic debugging found no bugs but users report broken buttons, or after any major refactor touching shared state stores.",
       "snapshotPath": "skills/click-path-audit",
       "hasSkillMd": true,
-      "sizeBytes": 7963
+      "sizeBytes": 7975
     },
     {
       "folder": "codebase-onboarding",
@@ -139,7 +139,7 @@
       "description": "Analyze an unfamiliar codebase and generate a structured onboarding guide with architecture map, key entry points, conventions, and a starter CLAUDE.md. Use when joining a new project or setting up Claude Code for the first time in a repo.",
       "snapshotPath": "skills/codebase-onboarding",
       "hasSkillMd": true,
-      "sizeBytes": 8223
+      "sizeBytes": 8235
     },
     {
       "folder": "codehealth-mcp",
@@ -147,7 +147,7 @@
       "description": "Real-time structural Code Health via CodeScene MCP — review before edits, verify score deltas after changes, gate commits and PRs. Use when reviewing code quality, refactoring, checking if AI changes degraded a file, or before commit/PR.",
       "snapshotPath": "skills/codehealth-mcp",
       "hasSkillMd": true,
-      "sizeBytes": 7451
+      "sizeBytes": 7463
     },
     {
       "folder": "context-budget",
@@ -155,7 +155,7 @@
       "description": "Audits Claude Code context window consumption across agents, skills, MCP servers, and rules. Identifies bloat, redundant components, and produces prioritized token-savings recommendations.",
       "snapshotPath": "skills/context-budget",
       "hasSkillMd": true,
-      "sizeBytes": 5695
+      "sizeBytes": 5707
     },
     {
       "folder": "deep-research",
@@ -163,7 +163,7 @@
       "description": "Universal deep research agent team. 13-agent pipeline for rigorous academic research on any topic. 8 modes: full research, quick brief, paper review, lit-review, fact-check, three-way literature scan, Socratic guided research dialogue, and systematic review with optional meta-analysis. Covers research question formulation, Socratic mentoring, methodology design, systematic literature search, source verification, cross-source synthesis, risk of bias assessment, meta-analysis, APA 7.0 report compilation, editorial review, devil's advocate challenges, ethics review, and post-research literature monitoring. Triggers on: research, deep research, literature review, systematic review, meta-analysis, PRISMA, evidence synthesis, fact-check, WHY HOW WHAT papers, 3W literature scan, guide my research, help me think through, 研究, 深度研究, 文獻回顧, 文獻探討, 系統性回顧, 後設分析, 事實查核, 三段式文獻掃描, 引導我的研究, 幫我釐清, 幫我想想, 我不確定要研究什麼, 研究方向, 研究主題.",
       "snapshotPath": "skills/deep-research",
       "hasSkillMd": true,
-      "sizeBytes": 621308
+      "sizeBytes": 621310
     },
     {
       "folder": "design-system",
@@ -171,7 +171,7 @@
       "description": "Use this skill to generate or audit design systems, check visual consistency, and review PRs that touch styling.",
       "snapshotPath": "skills/design-system",
       "hasSkillMd": true,
-      "sizeBytes": 2480
+      "sizeBytes": 2492
     },
     {
       "folder": "django-celery",
@@ -179,7 +179,7 @@
       "description": "Django + Celery async task patterns — configuration, task design, beat scheduling, retries, canvas workflows, monitoring, and testing. Use when adding background jobs, scheduled tasks, or async processing to a Django app.",
       "snapshotPath": "skills/django-celery",
       "hasSkillMd": true,
-      "sizeBytes": 13122
+      "sizeBytes": 13134
     },
     {
       "folder": "documentation-lookup",
@@ -187,7 +187,7 @@
       "description": "Use up-to-date library and framework docs via Context7 MCP instead of training data. Activates for setup questions, API references, code examples, or when the user names a framework (e.g. React, Next.js, Prisma).",
       "snapshotPath": "skills/documentation-lookup",
       "hasSkillMd": true,
-      "sizeBytes": 4900
+      "sizeBytes": 4912
     },
     {
       "folder": "ecc-guide",
@@ -195,15 +195,15 @@
       "description": "Guide users through ECC's current agents, skills, commands, hooks, rules, install profiles, and project onboarding by reading the live repository surface before answering.",
       "snapshotPath": "skills/ecc-guide",
       "hasSkillMd": true,
-      "sizeBytes": 5599
+      "sizeBytes": 5611
     },
     {
       "folder": "flox-environments",
       "name": "flox-environments",
-      "description": "Create reproducible, cross-platform development environments with Flox — a declarative environment manager built on Nix. ALWAYS use this skill when the user needs to: set up a project with system-level dependencies (compilers, databases, native libraries like openssl, libvips, BLAS, LAPACK); configure reproducible toolchains for Python, Node.js, Rust, Go, C/C++, Java, Ruby, Elixir, PHP, or any language; manage environments that must work identically across macOS and Linux; pin exact package versions for a team; run local services (PostgreSQL, Redis, Kafka) alongside development tools; onboard new developers with a single command; or solve 'works on my machine' problems. Especially valuable for AI-assisted and vibe coding — Flox lets agents install tools into a project-scoped environment without sudo, system pollution, or sandbox restrictions, and the resulting environment is committed to the repo so anyone can reproduce it instantly. Use this skill even if the user doesn't mention Flox — if they describe needing reproducible, declarative, cross-platform dev environments with system packages, this is the right tool. Also use when the user mentions .flox/, manifest.toml, flox activate, or FloxHub.",
+      "description": "Create reproducible, cross-platform (macOS/Linux) development environments with Flox, a declarative Nix-based environment manager. Use when setting up project toolchains for any language, installing system-level dependencies (compilers, databases, native libs like openssl/BLAS), pinning exact package versions for a team, running local services (PostgreSQL, Redis, Kafka), onboarding developers with one command, or solving 'works on my machine' problems — including agent/vibe-coding setups that need project-scoped tools without sudo. Also use when the user mentions .flox/, manifest.toml, flox activate, or FloxHub.",
       "snapshotPath": "skills/flox-environments",
       "hasSkillMd": true,
-      "sizeBytes": 14807
+      "sizeBytes": 14220
     },
     {
       "folder": "flutter-dart-code-review",
@@ -211,7 +211,7 @@
       "description": "Library-agnostic Flutter/Dart code review checklist covering widget best practices, state management patterns (BLoC, Riverpod, Provider, GetX, MobX, Signals), Dart idioms, performance, accessibility, security, and clean architecture.",
       "snapshotPath": "skills/flutter-dart-code-review",
       "hasSkillMd": true,
-      "sizeBytes": 23089
+      "sizeBytes": 23101
     },
     {
       "folder": "follow-aleabito",
@@ -227,7 +227,7 @@
       "description": "Accessibility patterns for React and Next.js — semantic HTML, ARIA attributes, form labeling, keyboard navigation, focus management, and screen reader support. Use when building any interactive UI component or form.",
       "snapshotPath": "skills/frontend-a11y",
       "hasSkillMd": true,
-      "sizeBytes": 12712
+      "sizeBytes": 12724
     },
     {
       "folder": "gan-style-harness",
@@ -235,7 +235,7 @@
       "description": "GAN-inspired Generator-Evaluator agent harness for building high-quality applications autonomously. Based on Anthropic's March 2026 harness design paper.",
       "snapshotPath": "skills/gan-style-harness",
       "hasSkillMd": true,
-      "sizeBytes": 12166
+      "sizeBytes": 12178
     },
     {
       "folder": "gateguard",
@@ -243,7 +243,7 @@
       "description": "Fact-forcing gate that blocks Edit/Write/Bash (including MultiEdit) and demands concrete investigation (importers, data schemas, user instruction) before allowing the action. Measurably improves output quality by +2.25 points vs ungated agents.",
       "snapshotPath": "skills/gateguard",
       "hasSkillMd": true,
-      "sizeBytes": 4714
+      "sizeBytes": 5214
     },
     {
       "folder": "git-workflow",
@@ -251,7 +251,7 @@
       "description": "Git workflow patterns including branching strategies, commit conventions, merge vs rebase, conflict resolution, and collaborative development best practices for teams of all sizes.",
       "snapshotPath": "skills/git-workflow",
       "hasSkillMd": true,
-      "sizeBytes": 15057
+      "sizeBytes": 15069
     },
     {
       "folder": "healthcare-cdss-patterns",
@@ -259,7 +259,7 @@
       "description": "Clinical Decision Support System (CDSS) development patterns. Drug interaction checking, dose validation, clinical scoring (NEWS2, qSOFA), alert severity classification, and integration into EMR workflows.",
       "snapshotPath": "skills/healthcare-cdss-patterns",
       "hasSkillMd": true,
-      "sizeBytes": 9320
+      "sizeBytes": 9332
     },
     {
       "folder": "healthcare-emr-patterns",
@@ -267,7 +267,7 @@
       "description": "EMR/EHR development patterns for healthcare applications. Clinical safety, encounter workflows, prescription generation, clinical decision support integration, and accessibility-first UI for medical data entry.",
       "snapshotPath": "skills/healthcare-emr-patterns",
       "hasSkillMd": true,
-      "sizeBytes": 6613
+      "sizeBytes": 6625
     },
     {
       "folder": "healthcare-eval-harness",
@@ -275,7 +275,7 @@
       "description": "Patient safety evaluation harness for healthcare application deployments. Automated test suites for CDSS accuracy, PHI exposure, clinical workflow integrity, and integration compliance. Blocks deployments on safety failures.",
       "snapshotPath": "skills/healthcare-eval-harness",
       "hasSkillMd": true,
-      "sizeBytes": 7707
+      "sizeBytes": 7719
     },
     {
       "folder": "hermes-imports",
@@ -283,7 +283,7 @@
       "description": "Convert local Hermes operator workflows into sanitized ECC skills and release-pack artifacts. Use when preparing a Hermes workflow for public ECC reuse without leaking private workspace state, credentials, or local-only paths.",
       "snapshotPath": "skills/hermes-imports",
       "hasSkillMd": true,
-      "sizeBytes": 2994
+      "sizeBytes": 3006
     },
     {
       "folder": "hexagonal-architecture",
@@ -291,7 +291,7 @@
       "description": "Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-case orchestration across TypeScript, Java, Kotlin, and Go services.",
       "snapshotPath": "skills/hexagonal-architecture",
       "hasSkillMd": true,
-      "sizeBytes": 11393
+      "sizeBytes": 11405
     },
     {
       "folder": "homelab-pihole-dns",
@@ -299,7 +299,7 @@
       "description": "Pi-hole installation, blocklist management, DNS-over-HTTPS setup, DHCP integration, local DNS records, and troubleshooting broken DNS resolution on a home network.",
       "snapshotPath": "skills/homelab-pihole-dns",
       "hasSkillMd": true,
-      "sizeBytes": 9388
+      "sizeBytes": 9400
     },
     {
       "folder": "homelab-vlan-segmentation",
@@ -307,7 +307,7 @@
       "description": "Segmenting home networks into VLANs for IoT, guest, trusted, and server traffic using UniFi, pfSense/OPNsense, and MikroTik — including switch trunk config, firewall rules, and wireless SSID mapping.",
       "snapshotPath": "skills/homelab-vlan-segmentation",
       "hasSkillMd": true,
-      "sizeBytes": 10160
+      "sizeBytes": 10172
     },
     {
       "folder": "homelab-wireguard-vpn",
@@ -315,7 +315,7 @@
       "description": "WireGuard VPN server setup, peer configuration, key generation, split tunneling vs full tunnel routing, and remote access to a home network from mobile and laptop clients.",
       "snapshotPath": "skills/homelab-wireguard-vpn",
       "hasSkillMd": true,
-      "sizeBytes": 10498
+      "sizeBytes": 10510
     },
     {
       "folder": "humanizer",
@@ -323,7 +323,7 @@
       "description": "Remove signs of AI-generated writing from text. Use when editing or reviewing text to make it sound more natural and human-written. Based on Wikipedia's comprehensive \"Signs of AI writing\" guide. Detects and fixes patterns including: inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, passive voice, negative parallelisms, and filler phrases.",
       "snapshotPath": "skills/humanizer",
       "hasSkillMd": true,
-      "sizeBytes": 48002
+      "sizeBytes": 50763
     },
     {
       "folder": "humanizer-zh",
@@ -347,7 +347,7 @@
       "description": "Legacy-project style inheritance skill. Use when the user types /inherit-legacy-style, or when onboarding an AI coding agent onto a hand-written legacy project and you need to prevent \"style drift\" (the model imposing its pretrained mainstream idioms onto the project). Language- and framework-agnostic — it aligns meta-architecture only, not syntax. Once run, it becomes a behavioral constraint on all subsequent coding tasks. Do NOT use for pure research or one-off questions unrelated to code-style alignment.",
       "snapshotPath": "skills/inherit-legacy-style",
       "hasSkillMd": true,
-      "sizeBytes": 8540
+      "sizeBytes": 8552
     },
     {
       "folder": "intent-driven-development",
@@ -363,7 +363,7 @@
       "description": "Generate iOS app icons as PNG imagesets for Xcode asset catalogs from SF Symbols (5000+ Apple-native) or Iconify API (275k+ open source icons from 200+ collections). Use when generating icons, creating icon assets, adding icons to asset catalog, or searching for icons for iOS projects.",
       "snapshotPath": "skills/ios-icon-gen",
       "hasSkillMd": true,
-      "sizeBytes": 21110
+      "sizeBytes": 21122
     },
     {
       "folder": "jupyter-live-kernel",
@@ -379,23 +379,23 @@
       "description": "Kubernetes workload patterns, resource management, RBAC, probes, autoscaling, ConfigMap/Secret handling, and kubectl debugging for production-grade deployments.",
       "snapshotPath": "skills/kubernetes-patterns",
       "hasSkillMd": true,
-      "sizeBytes": 19975
+      "sizeBytes": 19987
     },
     {
       "folder": "lark-approval",
       "name": "lark-approval",
-      "description": "飞书审批：当前用户审批的查询与全部处理操作，覆盖待本人审批的任务与本人发起的实例。审批待办不是飞书任务（任务类待办走 lark-task）；不负责创建审批定义和发起新审批。",
+      "description": "飞书审批：查询和处理审批待办/已办/实例，搜索可发起审批定义、查看定义详情并发起原生审批实例。当用户要处理审批任务、查看审批实例、搜索或发起审批时使用。审批待办不是飞书任务；非审批类待办走 lark-task。不负责创建审批定义；三方审批定义不走原生提单。",
       "snapshotPath": "skills/lark-approval",
       "hasSkillMd": true,
-      "sizeBytes": 1649
+      "sizeBytes": 107382
     },
     {
       "folder": "lark-apps",
       "name": "lark-apps",
-      "description": "妙搭（Spark/Miaoda）应用开发与托管：应用创建、HTML静态站点发布、本地全栈开发、云端生成迭代。当用户要开发/新建一个系统·工具·平台·应用，或要本地开发 / 云端开发 / 修改 / 部署 / 发布 / 上线 / 拿可分享链接，或用 HTML 做页面·网站给人看，或提到妙搭/Spark/Miaoda、应用数据库、可见范围时使用。不负责普通云盘文件上传（lark-drive）、飞书文档编辑（lark-doc）、原生幻灯片创建（lark-slides）。",
+      "description": "妙搭（Spark/Miaoda）应用开发与托管：应用创建、HTML静态站点发布、本地全栈开发、云端生成迭代、AI相关能力和飞书平台能力或者其他外部能力集成、日志/Trace/监控指标/PV/UV 查询、环境变量管理。当用户要开发/新建一个系统·工具·平台·应用，或要本地开发 / 云端开发 / 修改 / 部署 / 发布 / 上线 / 拿可分享链接，或用 HTML 做页面·网站·部署到妙搭，或提到妙搭/Spark/Miaoda（应用运行时域名形如 *.aiforce.cloud）、应用数据库、应用文件存储、开放 API Key、可见范围、线上日志、接口请求量、错误量、延迟、访问量、环境变量时使用。不负责普通云盘文件上传（lark-drive）、飞书文档编辑（lark-doc）、原生幻灯片创建（lark-slides）。",
       "snapshotPath": "skills/lark-apps",
       "hasSkillMd": true,
-      "sizeBytes": 53461
+      "sizeBytes": 88837
     },
     {
       "folder": "lark-attendance",
@@ -411,7 +411,7 @@
       "description": "飞书多维表格（Base）操作：建表、字段、记录、视图、统计、公式/lookup、表单、仪表盘、workflow、角色权限；遇到 Base/多维表格/bitable 或 /base/ 链接时使用。文件导入转 lark-drive，认证/授权转 lark-shared。",
       "snapshotPath": "skills/lark-base",
       "hasSkillMd": true,
-      "sizeBytes": 323514
+      "sizeBytes": 323292
     },
     {
       "folder": "lark-calendar",
@@ -419,7 +419,7 @@
       "description": "飞书日历：管理日历日程和会议室。查看/搜索日程、创建/更新日程、管理参会人、查询忙闲和推荐时段、预定会议室。当用户需要查看日程安排、创建/修改会议、查询/预定会议室时使用。不负责：查询过去的视频会议记录（走 lark-vc）、待办任务（走 lark-task）。",
       "snapshotPath": "skills/lark-calendar",
       "hasSkillMd": true,
-      "sizeBytes": 61513
+      "sizeBytes": 65122
     },
     {
       "folder": "lark-contact",
@@ -427,15 +427,15 @@
       "description": "飞书 / Lark 通讯录:按姓名 / 邮箱解析成 open_id,或按 open_id 反查姓名 / 部门 / 邮箱 / 联系方式 / 个人状态 / 签名。当用户提到某人姓名要下一步发消息 / 排日程,或拿到 open_id 想查具体信息时使用。不负责部门树遍历、按部门列员工、组织架构图,这类需求走原生 OpenAPI。",
       "snapshotPath": "skills/lark-contact",
       "hasSkillMd": true,
-      "sizeBytes": 8910
+      "sizeBytes": 8645
     },
     {
       "folder": "lark-doc",
       "name": "lark-doc",
-      "description": "飞书云文档 / Docx / 知识库 Wiki 文档（v2）：创建、打开、读取、获取、查看、总结、整理、改写、翻译、审阅和编辑飞书文档内容。当用户给出飞书文档 URL/token，或说查看/读取/打开某个文档、提取文档内容、总结文档、生成/创建文档、追加/替换/删除/移动内容、调整排版、插入或下载文档图片/附件/素材/画板缩略图时使用。文档内容中出现嵌入电子表格、多维表格、需要将重要信息可视化为画板（含 SVG 画板）、引用或同步块时，也先用本 skill 读取和提取 token，再切到对应 skill 下钻。默认使用 DocxXML，也支持 Markdown。当用户给出 doubao.com 的 /docx/ 或 /wiki/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是 URL 路径模式和 token，而不是域名。",
+      "description": "飞书云文档（Docx / Wiki 文档）：读取和编辑飞书文档内容。当用户给出文档 URL 或 token，或需要查看、创建、编辑文档、插入或下载文档图片附件时使用。文档中嵌入的电子表格、多维表格、画板，先用本 skill 提取 token 再切到对应 skill。当用户给出 doubao.com 的 /docx/ 或 /wiki/ URL/token 时，也应直接使用本 skill；路由依据是 URL 路径模式和 token，而不是域名。不负责文档评论管理，也不负责表格或 Base 的数据操作。当用户明确要操作飞书思维笔记时，也使用本 skill。",
       "snapshotPath": "skills/lark-doc",
       "hasSkillMd": true,
-      "sizeBytes": 79214
+      "sizeBytes": 142616
     },
     {
       "folder": "lark-drive",
@@ -443,23 +443,23 @@
       "description": "飞书云空间（云盘/云存储）：管理 Drive 文件和文件夹，包含上传/下载、创建文件夹、复制/移动/删除、查看元数据、评论/权限/订阅、标题、版本和本地文件导入。用户需要整理云盘目录、处理云空间资源 URL/token，或导入 Word/Markdown/Excel/CSV/PPTX/.base 为 docx/sheet/bitable/slides 时使用；doubao.com 云空间 URL/token 也按资源路径和 token 路由，不回退 WebFetch。不负责：文档内容编辑（走 lark-doc）、表格/Base 表内数据操作（走 lark-sheets/lark-base）、知识空间节点/成员管理（走 lark-wiki）、原生 Markdown 文件读写/patch/diff（走 lark-markdown）。",
       "snapshotPath": "skills/lark-drive",
       "hasSkillMd": true,
-      "sizeBytes": 338615
+      "sizeBytes": 347748
     },
     {
       "folder": "lark-event",
       "name": "lark-event",
-      "description": "Lark/Feishu real-time event listening / subscribing / consuming: stream events as NDJSON via `lark-cli event consume <EventKey>` (covers IM messages/reactions/chat changes, VC meeting ended, Minutes generated, Whiteboard updated, etc.). Use for Lark bots, real-time message processing, long-running subscribers, streaming webhook/push handlers. Supports `--max-events` / `--timeout` bounded runs and a stderr ready-marker contract — designed for AI agents running as subprocesses.",
+      "description": "Lark/Feishu real-time event listening / subscribing / consuming: stream events as NDJSON via `lark-cli event consume <EventKey>` (covers IM messages/reactions/chat changes, Task updates, VC meeting started/joined/ended, Minutes generated, Whiteboard updated, etc.). Use for Lark bots, real-time message processing, long-running subscribers, streaming webhook/push handlers. Supports `--max-events` / `--timeout` bounded runs and a stderr ready-marker contract — designed for AI agents running as subprocesses.",
       "snapshotPath": "skills/lark-event",
       "hasSkillMd": true,
-      "sizeBytes": 22974
+      "sizeBytes": 28086
     },
     {
       "folder": "lark-im",
       "name": "lark-im",
-      "description": "飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复、发送应用内/短信/电话加急。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员、搜索群、创建群聊或话题群、管理标记数据、管理 Feed 置顶（添加/移除/查询置顶会话）、管理标签数据时使用。",
+      "description": "飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复、发送应用内/短信/电话加急、发送和处理交互卡片（Interactive Card）、监听卡片按钮回调（card.action.trigger）。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员、搜索群、创建群聊或话题群、管理标记数据、管理 Feed 置顶（添加/移除/查询置顶会话）、管理标签数据、处理卡片回调时使用。",
       "snapshotPath": "skills/lark-im",
       "hasSkillMd": true,
-      "sizeBytes": 176221
+      "sizeBytes": 293080
     },
     {
       "folder": "lark-mail",
@@ -480,10 +480,10 @@
     {
       "folder": "lark-minutes",
       "name": "lark-minutes",
-      "description": "飞书妙记：搜索妙记列表、查看妙记基础信息、下载妙记音视频文件、上传音视频生成妙记、更新妙记标题、替换说话人。当需要获取、操作或者生成妙记时使用。也支持将本地音视频文件转成纪要和逐字稿（优先使用本 skill，不要用 ffmpeg/whisper 本地转写）。不负责：获取会议关联妙记，或仅按自然语言标题定位纪要",
+      "description": "飞书妙记：搜索妙记、查看妙记基础信息、下载/上传音视频、读取或编辑妙记的产物内容、改标题、替换说话人/关键词。当给出minute_token、本地音视频文件，要查/改/转妙记产物时使用；本地音视频转纪要/逐字稿优先走本 skill，不要用 ffmpeg/whisper 本地转写。不负责：获取会议关联妙记，或仅按自然语言标题定位纪要",
       "snapshotPath": "skills/lark-minutes",
       "hasSkillMd": true,
-      "sizeBytes": 52118
+      "sizeBytes": 52526
     },
     {
       "folder": "lark-okr",
@@ -491,7 +491,7 @@
       "description": "飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标、关键结果、对齐关系、量化指标和进展记录。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。不负责：待办任务管理（lark-task）、日程/会议安排（lark-calendar）、绩效评估",
       "snapshotPath": "skills/lark-okr",
       "hasSkillMd": true,
-      "sizeBytes": 74754
+      "sizeBytes": 104023
     },
     {
       "folder": "lark-openapi-explorer",
@@ -504,18 +504,18 @@
     {
       "folder": "lark-shared",
       "name": "lark-shared",
-      "description": "Use when first setting up lark-cli, running auth login, switching user/bot identity (--as), handling permission denied or scope errors, needing to update lark-cli, or seeing _notice in JSON output.",
+      "description": "Use for lark-cli setup/auth tasks: auth login/status/logout, user vs bot identity, business-domain permissions (--domain, including all/docs/drive), missing scopes, revoking authorization, or handling _notice JSON.",
       "snapshotPath": "skills/lark-shared",
       "hasSkillMd": true,
-      "sizeBytes": 8238
+      "sizeBytes": 11933
     },
     {
       "folder": "lark-sheets",
       "name": "lark-sheets",
-      "description": "飞书电子表格：创建和操作电子表格。支持创建表格、管理工作表与行列结构（增删/合并/调整尺寸/隐藏/冻结）、读写单元格（值/公式/样式/批注/单元格图片）、查找替换、多操作原子批量更新，以及图表、透视表、条件格式、筛选器、迷你图、浮动图片等对象的创建与维护。当用户需要创建电子表格、管理工作表、批量读写或编辑数据、统计汇总与可视化、表格美化、公式计算（含 Excel 公式迁移）等任务时使用。若用户是想按名称或关键词搜索云空间（云盘/云存储）里的表格文件，请改用 lark-drive 的 drive +search 先定位资源。当用户给出 doubao.com 的 /sheets/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是 URL 路径模式和 token，而不是域名。仅针对飞书在线电子表格，不适用于本地 Excel 文件。",
+      "description": "飞书电子表格：创建和操作电子表格。支持创建表格、管理工作表与行列结构（增删/合并/调整尺寸/隐藏/冻结）、读写单元格（值/公式/样式/批注/单元格图片）、查找替换、多操作原子批量更新，以及图表、透视表、条件格式、筛选器、迷你图、浮动图片等对象的创建与维护。当用户需要创建电子表格、管理工作表、批量读写或编辑数据、统计汇总与可视化、表格美化、公式计算（含 Excel 公式迁移）、金融/财务建模（DCF、三张表、预算、Sensitivity 等）等任务时使用。若用户是想按名称或关键词搜索云空间（云盘/云存储）里的表格文件，请改用 lark-drive 的 drive +search 先定位资源。当用户给出 doubao.com 的 /sheets/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是 URL 路径模式和 token，而不是域名。",
       "snapshotPath": "skills/lark-sheets",
       "hasSkillMd": true,
-      "sizeBytes": 246393
+      "sizeBytes": 295686
     },
     {
       "folder": "lark-skill-maker",
@@ -531,7 +531,7 @@
       "description": "飞书幻灯片：创建和编辑幻灯片。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。当用户给出 doubao.com 的 /slides/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是 URL 路径模式和 token，而不是域名。不负责：云文档内容编辑（走 lark-doc）、云文档里的独立画板对象（走 lark-whiteboard，注意 slide 内嵌的流程图/架构图仍属本 skill）、上传或下载普通文件（走 lark-drive）。",
       "snapshotPath": "skills/lark-slides",
       "hasSkillMd": true,
-      "sizeBytes": 4967065
+      "sizeBytes": 1248102
     },
     {
       "folder": "lark-task",
@@ -539,7 +539,7 @@
       "description": "飞书任务：管理任务、清单和任务智能体。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员、上传任务附件、注册或注销任务智能体、更新任务智能体的主页数据、写入智能体任务记录。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务、为任务上传附件文件、注册注销任务智能体、更新智能体主页数据、写入任务记录时使用。",
       "snapshotPath": "skills/lark-task",
       "hasSkillMd": true,
-      "sizeBytes": 41342
+      "sizeBytes": 39126
     },
     {
       "folder": "lark-vc",
@@ -547,23 +547,23 @@
       "description": "飞书视频会议：搜索历史会议记录、查询会议纪要（总结/待办/章节/逐字稿）、查询参会人快照。当用户查询已结束的会议、获取会议产物（纪要/妙记）、查看参会人时使用；查询未来日程走 lark-calendar。不负责：Agent 真实入会/离会、会中实时事件（走 lark-vc-agent）。",
       "snapshotPath": "skills/lark-vc",
       "hasSkillMd": true,
-      "sizeBytes": 40402
+      "sizeBytes": 41582
     },
     {
       "folder": "lark-vc-agent",
       "name": "lark-vc-agent",
-      "description": "飞书视频会议：让机器人代当前用户加入/离开正在进行的会议，并读取会议期间的实时事件（参会人加入与离开、发言、聊天、屏幕共享等）。1. 用户提供 9 位会议号、要求代为入会或离会时使用 +meeting-join / +meeting-leave——会真实产生入会/离会记录。2. 会议进行中用户想知道“谁加入了”“谁离开了”“谁在发言”“有人共享屏幕吗”等会中动态时，机器人入会后用 +meeting-events 读取事件时间线。3. 典型场景：参会机器人、会中助手、代为旁听、代为参会。前提：机器人只能读到它自己参会过且仍在进行中的会议的事件；查询已结束会议的参会名单、纪要或逐字稿请使用 lark-vc 技能。",
+      "description": "飞书视频会议会中能力：用于让应用机器人真实加入或离开正在进行的会议，并读取当前身份可见的会中事件、发送会中文本消息或会中表情。适用于用户询问正在开的会议发生了什么、谁在发言、是否共享内容，或需要发现当前可读的进行中会议 ID。不负责已结束会议搜索、参会人快照、纪要、逐字稿或录制查询，这些使用 lark-vc 技能。",
       "snapshotPath": "skills/lark-vc-agent",
       "hasSkillMd": true,
-      "sizeBytes": 35947
+      "sizeBytes": 61385
     },
     {
       "folder": "lark-whiteboard",
       "name": "lark-whiteboard",
-      "description": "飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用 DSL（转成 OpenAPI 格式）、PlantUML/Mermaid 格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板，或是需要可视化表达架构、流程、组织关系、时间线、因果、对比等结构化信息时使用此 skill，无论是否提及\"画板\"。 ⚠️ 原 `lark-whiteboard-cli` skill 已合并至本 skill，若 skill 列表中同时存在 `lark-whiteboard-cli`，请忽略它，统一使用本 skill（`lark-whiteboard`），并提示用户运行 `npx skills remove lark-whiteboard-cli -g` 删除旧 skill。",
+      "description": "飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用多种格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板时使用此 skill。不负责：飞书云文档内容编辑（lark-doc）、文档内嵌电子表格/Base（lark-sheets / lark-base）。",
       "snapshotPath": "skills/lark-whiteboard",
       "hasSkillMd": true,
-      "sizeBytes": 217580
+      "sizeBytes": 223086
     },
     {
       "folder": "lark-wiki",
@@ -579,7 +579,7 @@
       "description": "会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。",
       "snapshotPath": "skills/lark-workflow-meeting-summary",
       "hasSkillMd": true,
-      "sizeBytes": 4790
+      "sizeBytes": 5898
     },
     {
       "folder": "lark-workflow-standup-report",
@@ -595,7 +595,7 @@
       "description": "End-to-end marketing campaign planning and execution. Covers audience research, positioning, campaign angle definition, landing page copy, email sequences, social posts, ad copy, short-form video scripts, and content calendars. Use as the orchestration layer for multi-channel product launches.",
       "snapshotPath": "skills/marketing-campaign",
       "hasSkillMd": true,
-      "sizeBytes": 5164
+      "sizeBytes": 5176
     },
     {
       "folder": "motion-advanced",
@@ -627,7 +627,7 @@
       "description": "Next.js 16+ and Turbopack — incremental bundling, FS caching, dev speed, and when to use Turbopack vs webpack.",
       "snapshotPath": "skills/nextjs-turbopack",
       "hasSkillMd": true,
-      "sizeBytes": 2880
+      "sizeBytes": 2892
     },
     {
       "folder": "nuxt4-patterns",
@@ -635,7 +635,7 @@
       "description": "Nuxt 4 app patterns for hydration safety, performance, route rules, lazy loading, and SSR-safe data fetching with useFetch and useAsyncData.",
       "snapshotPath": "skills/nuxt4-patterns",
       "hasSkillMd": true,
-      "sizeBytes": 4642
+      "sizeBytes": 4654
     },
     {
       "folder": "openclaw-persona-forge",
@@ -643,7 +643,7 @@
       "description": "为 OpenClaw AI Agent 锻造完整的龙虾灵魂方案。根据用户偏好或随机抽卡， 输出身份定位、灵魂描述(SOUL.md)、角色化底线规则、名字和头像生图提示词。 如当前环境提供已审核的生图 skill，可自动生成统一风格头像图片。 当用户需要创建、设计或定制 OpenClaw 龙虾灵魂时使用。 不适用于：微调已有 SOUL.md、非 OpenClaw 平台的角色设计、纯工具型无性格 Agent。 触发词：龙虾灵魂、虾魂、OpenClaw 灵魂、养虾灵魂、龙虾角色、龙虾定位、 龙虾剧本杀角色、龙虾游戏角色、龙虾 NPC、龙虾性格、龙虾背景故事、 lobster soul、lobster character、抽卡、随机龙虾、龙虾 SOUL、gacha。",
       "snapshotPath": "skills/openclaw-persona-forge",
       "hasSkillMd": true,
-      "sizeBytes": 36219
+      "sizeBytes": 36231
     },
     {
       "folder": "opensource-pipeline",
@@ -651,7 +651,7 @@
       "description": "Open-source pipeline: fork, sanitize, and package private projects for safe public release. Chains 3 agents (forker, sanitizer, packager). Triggers: '/opensource', 'open source this', 'make this public', 'prepare for open source'.",
       "snapshotPath": "skills/opensource-pipeline",
       "hasSkillMd": true,
-      "sizeBytes": 6974
+      "sizeBytes": 6986
     },
     {
       "folder": "orch-add-feature",
@@ -659,7 +659,7 @@
       "description": "Orchestrate building a brand-new feature end to end — research, plan, TDD implementation, review, and gated commit — by delegating each phase to the matching ECC agent. Use when adding a capability that does not exist yet.",
       "snapshotPath": "skills/orch-add-feature",
       "hasSkillMd": true,
-      "sizeBytes": 1791
+      "sizeBytes": 1803
     },
     {
       "folder": "orch-build-mvp",
@@ -667,7 +667,7 @@
       "description": "Orchestrate bootstrapping a working MVP from a design or spec document — ingest the doc, plan thin vertical slices, scaffold the first end-to-end slice, then TDD-implement, review, and gated commit. Use to turn an SDD/PRD into a running starting point.",
       "snapshotPath": "skills/orch-build-mvp",
       "hasSkillMd": true,
-      "sizeBytes": 2309
+      "sizeBytes": 2321
     },
     {
       "folder": "orch-change-feature",
@@ -675,7 +675,7 @@
       "description": "Orchestrate altering an existing, working feature to new desired behavior — update its tests to the new spec, change the implementation to match, review, and gated commit. Use when behavior is not broken but should be different.",
       "snapshotPath": "skills/orch-change-feature",
       "hasSkillMd": true,
-      "sizeBytes": 1699
+      "sizeBytes": 1711
     },
     {
       "folder": "orch-fix-defect",
@@ -683,7 +683,7 @@
       "description": "Orchestrate fixing a bug — reproduce it as a failing regression test, fix to green, review, and gated commit — by delegating each phase to the matching ECC agent. Use when existing behavior is broken or wrong.",
       "snapshotPath": "skills/orch-fix-defect",
       "hasSkillMd": true,
-      "sizeBytes": 1672
+      "sizeBytes": 1684
     },
     {
       "folder": "orch-pipeline",
@@ -691,7 +691,7 @@
       "description": "Shared orchestration engine for the orch-* skill family. Defines the gated Research-Plan-TDD-Review-Commit pipeline, the size classifier, the agent map, and the two human gates that the orch-* operation skills delegate to. Not usually invoked directly.",
       "snapshotPath": "skills/orch-pipeline",
       "hasSkillMd": true,
-      "sizeBytes": 6203
+      "sizeBytes": 6215
     },
     {
       "folder": "orch-refine-code",
@@ -699,7 +699,7 @@
       "description": "Orchestrate a behavior-preserving refactor — confirm tests are green, restructure without changing behavior, keep tests green, review, and gated commit. Use when the structure should improve but behavior must not change.",
       "snapshotPath": "skills/orch-refine-code",
       "hasSkillMd": true,
-      "sizeBytes": 1807
+      "sizeBytes": 1819
     },
     {
       "folder": "plan",
@@ -715,7 +715,7 @@
       "description": "Read a plan document, decompose it into steps, design a per-step agent chain from the ECC catalogue, and emit ready-to-paste /orchestrate custom prompts. Generative only — never invokes /orchestrate itself. Use when the user has a multi-step plan and wants to drive it through orchestrate without composing chains by hand.",
       "snapshotPath": "skills/plan-orchestrate",
       "hasSkillMd": true,
-      "sizeBytes": 18238
+      "sizeBytes": 17965
     },
     {
       "folder": "popular-web-designs",
@@ -731,7 +731,7 @@
       "description": "Create, read, edit .pptx decks, slides, notes, templates.",
       "snapshotPath": "skills/powerpoint",
       "hasSkillMd": true,
-      "sizeBytes": 1040140
+      "sizeBytes": 1040149
     },
     {
       "folder": "product-lens",
@@ -739,7 +739,7 @@
       "description": "Use this skill to validate the \"why\" before building, run product diagnostics, and pressure-test product direction before the request becomes an implementation contract.",
       "snapshotPath": "skills/product-lens",
       "hasSkillMd": true,
-      "sizeBytes": 3090
+      "sizeBytes": 3102
     },
     {
       "folder": "pytorch-patterns",
@@ -747,7 +747,7 @@
       "description": "PyTorch deep learning patterns and best practices for building robust, efficient, and reproducible training pipelines, model architectures, and data loading.",
       "snapshotPath": "skills/pytorch-patterns",
       "hasSkillMd": true,
-      "sizeBytes": 11659
+      "sizeBytes": 11671
     },
     {
       "folder": "react-performance",
@@ -771,7 +771,7 @@
       "description": "Redis data structure patterns, caching strategies, distributed locks, rate limiting, pub/sub, and connection management for production applications.",
       "snapshotPath": "skills/redis-patterns",
       "hasSkillMd": true,
-      "sizeBytes": 11849
+      "sizeBytes": 11861
     },
     {
       "folder": "repo-scan",
@@ -787,7 +787,7 @@
       "description": "Write ML papers for NeurIPS/ICML/ICLR: design→submit.",
       "snapshotPath": "skills/research-paper-writing",
       "hasSkillMd": true,
-      "sizeBytes": 1408767
+      "sizeBytes": 1409066
     },
     {
       "folder": "rules-distill",
@@ -795,7 +795,7 @@
       "description": "Scan skills to extract cross-cutting principles and distill them into rules — append, revise, or create new rule files",
       "snapshotPath": "skills/rules-distill",
       "hasSkillMd": true,
-      "sizeBytes": 14976
+      "sizeBytes": 14988
     },
     {
       "folder": "safety-guard",
@@ -803,7 +803,7 @@
       "description": "Use this skill to prevent destructive operations when working on production systems or running agents autonomously.",
       "snapshotPath": "skills/safety-guard",
       "hasSkillMd": true,
-      "sizeBytes": 1933
+      "sizeBytes": 1945
     },
     {
       "folder": "santa-method",
@@ -811,7 +811,7 @@
       "description": "Multi-agent adversarial verification with convergence loop. Two independent review agents must both pass before output ships.",
       "snapshotPath": "skills/santa-method",
       "hasSkillMd": true,
-      "sizeBytes": 12781
+      "sizeBytes": 12793
     },
     {
       "folder": "serenity-aleabitoreddit",
@@ -819,7 +819,7 @@
       "description": "Apply trader Serenity's (@aleabitoreddit) AI/semiconductor supply-chain analytical lens to US-stock ideas and market judgment. Use this skill whenever evaluating a stock decision (buy / sell / hold / size); forming an outlook on any AI, semiconductor, optical/CPO, memory, power/grid, or neocloud name; mentioning any ticker in Serenity's universe (NBIS, AXTI, LITE, SIVE, COHR, AAOI, IREN, CRWV, MU, SNDK, NVDA, TSM, MRVL, AVGO, INTC, SOI, IQE, TSEM, CIFR, XLU, VST, CEG, EWY, etc.); asking \"what would Serenity think\", \"is this a real bottleneck\", or wanting a supply-chain / bottleneck read on a thesis. Decision-support only — never auto-trades and never places or cancels orders.",
       "snapshotPath": "skills/serenity-aleabitoreddit",
       "hasSkillMd": true,
-      "sizeBytes": 377910
+      "sizeBytes": 421211
     },
     {
       "folder": "serenity-chokepoint-investing",
@@ -864,10 +864,10 @@
     {
       "folder": "serenity-skill-0xagata",
       "name": "serenity-skill-0xagata",
-      "description": "Serenity supply-chain investing research framework from 0xagata-prog/serenity-skill.",
+      "description": "> *Distilled from 4,740 tweets by @aleabitoreddit — supply chain analyst, retail investor champion, photonics supercycle caller.*",
       "snapshotPath": "skills/serenity-skill-0xagata",
       "hasSkillMd": true,
-      "sizeBytes": 1880060
+      "sizeBytes": 1904010
     },
     {
       "folder": "serenity-stock-choke",
@@ -875,7 +875,7 @@
       "description": "A股通用\"卡脖子\"选股技能。应用 Serenity（@aleabitoreddit）的供应链瓶颈理论， 对任意 A 股板块/产业链进行结构化分析，寻找\"一旦断货整个产业就停工\"的瓶颈环节， 并筛选该环节中具备技术壁垒和资本信号的小盘股。 触发词：分析XX板块、找XX卡脖子、serenity分析、A股瓶颈产业链 适用板块示例：电力、光模块、医疗器械、半导体设备、军工、新能源车等任意板块 数据源：neodata-financial-search（行情/研报/资金）+ westock-data（筹码/大宗/机构） ⚠️ 注意：本技能不预测大盘走势，不适用于纯题材炒作无实质产业逻辑的小票。",
       "snapshotPath": "skills/serenity-stock-choke",
       "hasSkillMd": true,
-      "sizeBytes": 20978
+      "sizeBytes": 23767
     },
     {
       "folder": "serenity-stock-scorer",
@@ -887,19 +887,19 @@
     },
     {
       "folder": "serenity-zadanthony",
-      "name": "serenity-zadanthony",
-      "description": "--- name: serenity-zadanthony description: 鐢?Serenity(@aleabitoreddit)鐨?渚涘簲閾惧崱鐐归€嗗悜\"鎶曡祫閫昏緫鍒嗘瀽鑲＄エ/鏉垮潡鈥斺€斿府浣犲垽鏂鎬庝箞鍒嗘瀽銆佸線鍝竴灞傛寲銆佷粈涔堜細璇佸疄鎴栬瘉浼€佸€间笉鍊煎緱鎶曘€傛妸甯傚満褰撶墿鐞嗙郴缁熻€岄潪浠ｇ爜鍒楄〃,鍏堝缓 thesis 鍐嶈皥鏍囩殑銆傚綋鐢ㄦ埛鑱婄編鑲?AI 渚涘簲閾?鍏夋ā鍧?CPO/纭呭厜/InP)/鍗婂浣?鍐呭瓨/NeoCloud/鐢靛姏娑插喎/鏈哄櫒浜虹瓑 AI 鍏ㄤ骇涓氶摼浠绘剰缁嗗垎鐨勬姇璧勫垎鏋?鎴栦富鍔?/serenity 鏃朵娇鐢ㄣ€?---",
+      "name": "serenity",
+      "description": "用 Serenity(@aleabitoreddit)的\"供应链卡点逆向\"投资逻辑分析股票/板块——帮你判断该怎么分析、往哪一层挖、什么会证实或证伪、值不值得投。把市场当物理系统而非代码列表,先建 thesis 再谈标的。当用户聊美股/AI 供应链/光模块(CPO/硅光/InP)/半导体/内存/NeoCloud/电力液冷/机器人等 AI 全产业链任意细分的投资分析,或主动 /serenity 时使用。",
       "snapshotPath": "skills/serenity-zadanthony",
       "hasSkillMd": true,
-      "sizeBytes": 113324
+      "sizeBytes": 101441
     },
     {
       "folder": "serenity-zongmin-yu",
-      "name": "serenity-zongmin-yu",
+      "name": "serenity",
       "description": "Activates AI infrastructure and semiconductor supply chain analysis. Trigger when: tracing hyperscaler AI capex to find bottleneck companies, analyzing semiconductor/photonics/memory/packaging supply chains, mapping BOM dependencies for AI hardware (GPUs, TPUs, ASICs, optical interconnects, HBM), evaluating supplier concentration in chip materials or critical components, asking \"who controls the critical input for AI buildout,\" or identifying small companies that trillion-dollar AI deployments depend on. Even if the user does not mention \"Serenity,\" proactively trigger when the topic involves AI infrastructure supply chain analysis, semiconductor bottleneck mapping, or upstream supplier tracing for AI hardware.",
       "snapshotPath": "skills/serenity-zongmin-yu",
       "hasSkillMd": true,
-      "sizeBytes": 10043
+      "sizeBytes": 10029
     },
     {
       "folder": "sketch",
@@ -915,7 +915,7 @@
       "description": "Visualize whether skills, rules, and agent definitions are actually followed — auto-generates scenarios at 3 prompt strictness levels, runs agents, classifies behavioral sequences, and reports compliance rates with full tool call timelines",
       "snapshotPath": "skills/skill-comply",
       "hasSkillMd": true,
-      "sizeBytes": 60000
+      "sizeBytes": 60320
     },
     {
       "folder": "social-publisher",
@@ -923,7 +923,7 @@
       "description": "Agent-driven scheduling and publishing of social media posts across 13 platforms via SocialClaw. Use when the user wants to publish to X, LinkedIn, Instagram, Facebook Pages, TikTok, Discord, Telegram, YouTube, Reddit, WordPress, or Pinterest — or when managing campaigns, uploading media, or monitoring post delivery status.",
       "snapshotPath": "skills/social-publisher",
       "hasSkillMd": true,
-      "sizeBytes": 3021
+      "sizeBytes": 3949
     },
     {
       "folder": "tinystruct-patterns",
@@ -931,7 +931,7 @@
       "description": "Expert guidance for developing with the tinystruct Java framework. Use when working on the tinystruct codebase or any project built on tinystruct — including creating Application classes, @Action-mapped routes, unit tests, ActionRegistry, HTTP/CLI dual-mode handling, the built-in HTTP server, the event system, JSON with Builder/Builders, database persistence with AbstractData, POJO generation, Server-Sent Events (SSE), file uploads, and outbound HTTP networking.",
       "snapshotPath": "skills/tinystruct-patterns",
       "hasSkillMd": true,
-      "sizeBytes": 24982
+      "sizeBytes": 27823
     },
     {
       "folder": "token-budget-advisor",
@@ -947,7 +947,7 @@
       "description": "Use when managing an Uncloud cluster — deploying services, configuring Caddy ingress, adding static proxy routes for non-cluster devices, publishing ports, scaling, inspecting logs, or managing machines and volumes with the `uc` CLI.",
       "snapshotPath": "skills/uncloud",
       "hasSkillMd": true,
-      "sizeBytes": 9270
+      "sizeBytes": 9282
     },
     {
       "folder": "vite-patterns",
@@ -955,7 +955,7 @@
       "description": "Vite build tool patterns including config, plugins, HMR, env variables, proxy setup, SSR, library mode, dependency pre-bundling, and build optimization. Activate when working with vite.config.ts, Vite plugins, or Vite-based projects.",
       "snapshotPath": "skills/vite-patterns",
       "hasSkillMd": true,
-      "sizeBytes": 17103
+      "sizeBytes": 17115
     }
   ]
 }

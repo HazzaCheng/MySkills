@@ -493,6 +493,348 @@
       "ref": "main",
       "path": "skills/creative/sketch",
       "source": "Hermes bundled/optional skill path matched from original backup metadata"
+    },
+    "accessibility": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/accessibility",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "agent-eval": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/agent-eval",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "agent-payment-x402": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/agent-payment-x402",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "architecture-decision-records": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/architecture-decision-records",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "autonomous-agent-harness": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/autonomous-agent-harness",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "benchmark": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/benchmark",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "browser-qa": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/browser-qa",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "bun-runtime": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/bun-runtime",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "canary-watch": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/canary-watch",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "click-path-audit": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/click-path-audit",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "codebase-onboarding": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/codebase-onboarding",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "codehealth-mcp": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/codehealth-mcp",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "context-budget": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/context-budget",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "design-system": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/design-system",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "django-celery": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/django-celery",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "documentation-lookup": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/documentation-lookup",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "ecc-guide": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/ecc-guide",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "flox-environments": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/flox-environments",
+      "source": "explicit after upstream frontmatter dropped (origin:Flox)"
+    },
+    "flutter-dart-code-review": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/flutter-dart-code-review",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "frontend-a11y": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/frontend-a11y",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "gan-style-harness": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/gan-style-harness",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC-community)"
+    },
+    "gateguard": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/gateguard",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "git-workflow": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/git-workflow",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "healthcare-cdss-patterns": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/healthcare-cdss-patterns",
+      "source": "explicit after upstream frontmatter dropped (origin:Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel)"
+    },
+    "healthcare-emr-patterns": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/healthcare-emr-patterns",
+      "source": "explicit after upstream frontmatter dropped (origin:Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel)"
+    },
+    "healthcare-eval-harness": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/healthcare-eval-harness",
+      "source": "explicit after upstream frontmatter dropped (origin:Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel)"
+    },
+    "hermes-imports": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/hermes-imports",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "hexagonal-architecture": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/hexagonal-architecture",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "homelab-pihole-dns": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/homelab-pihole-dns",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "homelab-vlan-segmentation": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/homelab-vlan-segmentation",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "homelab-wireguard-vpn": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/homelab-wireguard-vpn",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "inherit-legacy-style": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/inherit-legacy-style",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "ios-icon-gen": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/ios-icon-gen",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "kubernetes-patterns": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/kubernetes-patterns",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "marketing-campaign": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/marketing-campaign",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "nextjs-turbopack": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/nextjs-turbopack",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "nuxt4-patterns": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/nuxt4-patterns",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "openclaw-persona-forge": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/openclaw-persona-forge",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "opensource-pipeline": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/opensource-pipeline",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "orch-add-feature": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/orch-add-feature",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "orch-build-mvp": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/orch-build-mvp",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "orch-change-feature": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/orch-change-feature",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "orch-fix-defect": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/orch-fix-defect",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "orch-pipeline": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/orch-pipeline",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "orch-refine-code": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/orch-refine-code",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "plan-orchestrate": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/plan-orchestrate",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "product-lens": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/product-lens",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "pytorch-patterns": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/pytorch-patterns",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "redis-patterns": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/redis-patterns",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "rules-distill": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/rules-distill",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "safety-guard": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/safety-guard",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "santa-method": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/santa-method",
+      "source": "explicit after upstream frontmatter dropped (origin:Ronald Skelton - Founder, RapportScore.ai)"
+    },
+    "skill-comply": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/skill-comply",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "social-publisher": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/social-publisher",
+      "source": "explicit after upstream frontmatter dropped (origin:community)"
+    },
+    "tinystruct-patterns": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/tinystruct-patterns",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "uncloud": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/uncloud",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
+    },
+    "vite-patterns": {
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "path": "skills/vite-patterns",
+      "source": "explicit after upstream frontmatter dropped (origin:ECC)"
     }
   }
 }

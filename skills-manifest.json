@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-06T10:52:31+08:00",
+  "generatedAt": "2026-07-06T11:07:33+08:00",
   "sourceComputer": "MacBook-Pro.local",
   "sourceRoot": "/Users/bytedance/.codex/skills",
   "note": "This repository snapshots non-system user skills, usually from ~/.codex/skills. Package-managed skills listed in skills-installers.json are intentionally not copied. System and plugin-provided skills are intentionally not copied.",
-  "skillCount": 121,
+  "skillCount": 122,
   "skills": [
     {
       "folder": "academic-paper",
@@ -372,6 +372,14 @@
       "snapshotPath": "skills/jupyter-live-kernel",
       "hasSkillMd": true,
       "sizeBytes": 5285
+    },
+    {
+      "folder": "karpathy-guidelines",
+      "name": "karpathy-guidelines",
+      "description": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.",
+      "snapshotPath": "skills/karpathy-guidelines",
+      "hasSkillMd": true,
+      "sizeBytes": 3135
     },
     {
       "folder": "kubernetes-patterns",

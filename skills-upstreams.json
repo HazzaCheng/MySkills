@@ -218,6 +218,12 @@
       "path": ".",
       "source": "install command/source repo used when adding skill"
     },
+    "karpathy-guidelines": {
+      "repo": "https://github.com/multica-ai/andrej-karpathy-skills.git",
+      "ref": "main",
+      "path": "skills/karpathy-guidelines",
+      "source": "user-requested install from andrej-karpathy-skills; local SKILL.md adds Claude/Codex global instruction targets"
+    },
     "lark-approval": {
       "repo": "https://github.com/larksuite/cli.git",
       "ref": "main",

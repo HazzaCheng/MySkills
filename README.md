@@ -42,6 +42,7 @@ Package-managed skills listed in `skills-installers.json` are installed from the
 | Skill | Install command | Notes |
 |---|---|---|
 | ecc-skills | `python3 scripts/install-ecc-package-skills.py --package ecc-universal --skills <managedSkillNamesCsv>` | Install ECC skills that are present in the ecc-universal npm package. ECC skills not currently shipped in that package remain as repository snapshots. |
+| ttmall-skill-repo | `cd /Users/bytedance/Work/code/ttmall_skill_repo && bash install.sh` | Installed as symlinks from /Users/bytedance/Work/code/ttmall_skill_repo. Keep these managed by that repository instead of snapshotting them into MySkills. |
 | weread-skills | `npx skills add Tencent/WeChatReading -g` | Set `WEREAD_API_KEY` locally after install. |
 
 ## Update this repo after installing new skills

@@ -20,6 +20,24 @@
       },
       "notes": "Install from the upstream package command on new machines instead of restoring an old snapshot."
     },
+    "ttmall-skill-repo": {
+      "installCommand": "cd /Users/bytedance/Work/code/ttmall_skill_repo && bash install.sh",
+      "displayInstallCommand": "cd /Users/bytedance/Work/code/ttmall_skill_repo && bash install.sh",
+      "repo": "git@code.byted.org:data/ttmall_skill_repo.git",
+      "ref": "main",
+      "path": "vendor/* and claude-skills/*",
+      "destination": "~/.codex/skills and ~/.agents/skills",
+      "managedSkillNames": [
+        "bytedcli",
+        "bytedcli-libra",
+        "forge",
+        "reckon-stage-utilization",
+        "ttmall-browser",
+        "ttmall-libra-fetch",
+        "ttmall-libra-report"
+      ],
+      "notes": "Installed as symlinks from /Users/bytedance/Work/code/ttmall_skill_repo. Keep these managed by that repository instead of snapshotting them into MySkills."
+    },
     "ecc-skills": {
       "installCommand": "python3 scripts/install-ecc-package-skills.py --package ecc-universal --skills {managedSkillNamesCsv}",
       "displayInstallCommand": "python3 scripts/install-ecc-package-skills.py --package ecc-universal --skills <managedSkillNamesCsv>",

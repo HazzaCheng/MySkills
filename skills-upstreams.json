@@ -128,12 +128,6 @@
       "path": ".",
       "source": "SKILL.md upstream link; install text only has short pin 2742664"
     },
-    "serenity-skill-0xagata": {
-      "repo": "https://github.com/0xagata-prog/serenity-skill.git",
-      "ref": "main",
-      "path": ".",
-      "source": "manifest description"
-    },
     "token-budget-advisor": {
       "repo": "https://github.com/Xabilimon1/Token-Budget-Advisor-Claude-Code-.git",
       "ref": "main",
@@ -380,72 +374,6 @@
       "path": "skills/lark-workflow-standup-report",
       "source": "git history: df5fd7f Install Lark skills; public larksuite/cli skill bundle"
     },
-    "follow-aleabito": {
-      "repo": "https://github.com/lanfuli/aleabito-serenity-skills.git",
-      "ref": "main",
-      "path": "skills/follow-aleabito",
-      "source": "public repo matched by skill path"
-    },
-    "serenity-method": {
-      "repo": "https://github.com/lanfuli/aleabito-serenity-skills.git",
-      "ref": "main",
-      "path": "skills/serenity-method",
-      "source": "public repo matched by skill path"
-    },
-    "serenity-radar": {
-      "repo": "https://github.com/lanfuli/aleabito-serenity-skills.git",
-      "ref": "main",
-      "path": "skills/serenity-radar",
-      "source": "public repo matched by skill path"
-    },
-    "serenity-aleabitoreddit": {
-      "repo": "https://github.com/yan-labs/serenity-aleabitoreddit.git",
-      "ref": "main",
-      "path": "serenity-aleabitoreddit",
-      "source": "public repo matched by skill path"
-    },
-    "serenity-chokepoint-investing": {
-      "repo": "https://github.com/W-Y-P/Serenity-aleabitoreddit-skill.git",
-      "ref": "main",
-      "path": ".",
-      "source": "README upstream/source link"
-    },
-    "serenity-reply": {
-      "repo": "https://github.com/leslieyeo/serenity-reply.git",
-      "ref": "main",
-      "path": ".",
-      "source": "README upstream/source link"
-    },
-    "serenity-skill": {
-      "repo": "https://github.com/muxuuu/serenity-skill.git",
-      "ref": "main",
-      "path": ".",
-      "source": "public repo matched by package contents"
-    },
-    "serenity-stock-choke": {
-      "repo": "https://github.com/fadewalk/serenity-stock-choke.git",
-      "ref": "main",
-      "path": ".",
-      "source": "public repo matched by package contents"
-    },
-    "serenity-stock-scorer": {
-      "repo": "https://github.com/haskaomni/serenity.git",
-      "ref": "main",
-      "path": "skills/serenity-stock-scorer",
-      "source": "public repo matched by skill path"
-    },
-    "serenity-zadanthony": {
-      "repo": "https://github.com/ZadAnthony/serenity-skill.git",
-      "ref": "main",
-      "path": ".",
-      "source": "README upstream/source link"
-    },
-    "serenity-zongmin-yu": {
-      "repo": "https://github.com/zongmin-yu/serenity-skills.git",
-      "ref": "main",
-      "path": "skills/serenity",
-      "source": "public repo matched by skill path"
-    },
     "arxiv": {
       "repo": "https://github.com/NousResearch/hermes-agent.git",
       "ref": "main",
@@ -511,12 +439,6 @@
       "ref": "main",
       "path": "skills/agent-eval",
       "source": "explicit after upstream frontmatter dropped (origin:ECC)"
-    },
-    "agent-payment-x402": {
-      "repo": "https://github.com/affaan-m/everything-claude-code.git",
-      "ref": "main",
-      "path": "skills/agent-payment-x402",
-      "source": "explicit after upstream frontmatter dropped (origin:community)"
     },
     "architecture-decision-records": {
       "repo": "https://github.com/affaan-m/everything-claude-code.git",
